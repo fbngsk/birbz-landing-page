@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datenschutz - Birbz</title>
+    
+    <link rel="apple-touch-icon" href="images/birbz-icon.png">
+    <link rel="icon" type="image/png" href="images/birbz-icon.png">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        birb: {
+                            teal: '#134E4A',
+                            primary: '#0D9488',
+                            bg: '#F8F6F1',
+                            orange: '#F97316',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-birb-bg text-slate-800 font-sans antialiased">
+
+    <!-- Navbar -->
+    <nav class="w-full bg-birb-bg border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="index.html" class="flex items-center gap-2">
+                    <img src="images/birbz-icon.png" alt="Birbz" class="w-10 h-10 rounded-xl">
+                    <span class="font-bold text-2xl tracking-tight text-birb-teal">Birbz</span>
+                </a>
+                <a href="index.html" class="text-gray-600 hover:text-birb-primary transition">← Zurück</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <main class="max-w-3xl mx-auto px-4 py-16">
+        <h1 class="text-4xl font-bold text-gray-900 mb-8">Datenschutzerklärung</h1>
+        
+        <div class="space-y-8 text-gray-600">
+            
+            <section>
+                <h2 class="text-xl font-bold text-gray-800 mb-3">1. Datenschutz auf einen Blick</h2>
+                <p>
+                    Diese Datenschutzerklärung klärt dich über die Art, den Umfang und Zweck der Verarbeitung von personenbezogenen Daten innerhalb der Birbz Web-App auf.
+                </p>
+            </section>
+
+            <section>
+                <h2 class="text-xl font-bold text-gray-800 mb-3">2. Verantwortliche Stelle</h2>
+                <p>
+                    Schønlein Media GmbH<br>
+                    Tempelhofer Ufer 36<br>
+                    10963 Berlin<br><br>
+                    E-Mail: hello@birbz.de
+                </p>
+            </section>
+
+            <section>
+                <h2 class="text-xl font-bold text-gray-800 mb-3">3. Welche Daten wir erheben</h2>
+                
+                <h3 class="font-semibold text-gray-700 mt-4 mb-2">Nutzerkonto</h3>
+                <p>
+                    Bei der Registrierung speichern wir deine E-Mail-Adresse und deinen gewählten Benutzernamen. Diese Daten werden benötigt, um dein Konto zu verwalten und deine Vogelsammlung zu speichern.
+                </p>
+
+                <h3 class="font-semibold text-gray-700 mt-4 mb-2">Fotos zur Vogelbestimmung</h3>
+                <p>
+                    Wenn du ein Foto zur Vogelbestimmung hochlädst, wird dieses an unseren KI-Dienst (Google Gemini) übermittelt. Die Fotos werden ausschließlich zur Bestimmung der Vogelart verwendet und nicht dauerhaft auf unseren Servern gespeichert, es sei denn, du fügst den Vogel deiner Sammlung hinzu.
+                </p>
+
+                <h3 class="font-semibold text-gray-700 mt-4 mb-2">Standortdaten</h3>
+                <p>
+                    Mit deiner Zustimmung erfassen wir deinen Standort, um Vogelsichtungen geografisch zuzuordnen. Die Standortfreigabe ist optional und kann jederzeit in deinen Geräteeinstellungen widerrufen werden.
+                </p>
+
+                <h3 class="font-semibold text-gray-700 mt-4 mb-2">Nutzungsdaten</h3>
+                <p>
+                    Wir erfassen anonymisierte Nutzungsdaten wie besuchte Seiten und Interaktionen, um die App zu verbessern. Diese Daten sind nicht personenbezogen.
+                </p>
+            </section>
+
+            <section>
+                <h2 class="text-xl font-bold text-gray-800 mb-3">4. Zweck der Datenverarbeitung</h2>
+                <p>Wir verarbeiten deine Daten für folgende Zwecke:</p>
+                <ul class="list-disc list-inside mt-2 space-y-1">
+                    <li>Bereitstellung und Betrieb der Birbz-App</li>
+                    <li>KI-gestützte Vogelbestimmung</li>
+                    <li>Speicherung deiner persönlichen Vogelsammlung</li>
+                    <li>Anzeige von Leaderboards und Community-Funktionen</li>
+                    <li>Verbesserung unserer Dienste</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2 class="text-xl font-bold text-gray-800 mb-3">5. Drittanbieter</h2>
+                
+                <h3 class="font-semibold text-gray-700 mt-4 mb-2">Supabase</h3>
+                <p>
+                    Wir nutzen Supabase als Backend-Dienst zur Speicherung von Nutzerdaten und Vogelsammlungen. Supabase speichert Daten auf Servern in der EU.
+                </p>
+
+                <h3 class="font-semibold text-gray-700 mt-4 mb-2">Google Gemini</h3>
+                <p>
+                    Für die KI-Vogelbestimmung nutzen wir Google Gemini. Hochgeladene Fotos werden zur Analyse an Google übermittelt. Es gelten die Datenschutzbestimmungen von Google.
+                </p>
+
+                <h3 class="font-semibold text-gray-700 mt-4 mb-2">Vercel</h3>
+                <p>
+                    Unsere Website wird über Vercel gehostet. Vercel kann technische Daten wie IP-Adressen zur Bereitstellung des Dienstes verarbeiten.
+                </p>
+            </section>
+
+            <section>
+                <h2 class="text-xl font-bold text-gray-800 mb-3">6. Speicherdauer</h2>
+                <p>
+                    Deine Kontodaten und Vogelsammlung werden gespeichert, solange dein Konto aktiv ist. Bei Löschung deines Kontos werden alle personenbezogenen Daten innerhalb von 30 Tagen gelöscht.
+                </p>
+            </section>
+
+            <section>
+                <h2 class="text-xl font-bold text-gray-800 mb-3">7. Deine Rechte</h2>
+                <p>Du hast jederzeit das Recht auf:</p>
+                <ul class="list-disc list-inside mt-2 space-y-1">
+                    <li>Auskunft über deine gespeicherten Daten</li>
+                    <li>Berichtigung unrichtiger Daten</li>
+                    <li>Löschung deiner Daten</li>
+                    <li>Einschränkung der Verarbeitung</li>
+                    <li>Datenübertragbarkeit</li>
+                    <li>Widerspruch gegen die Verarbeitung</li>
+                </ul>
+                <p class="mt-3">
+                    Kontaktiere uns unter hello@birbz.de, um deine Rechte auszuüben.
+                </p>
+            </section>
+
+            <section>
+                <h2 class="text-xl font-bold text-gray-800 mb-3">8. Cookies</h2>
+                <p>
+                    Birbz verwendet nur technisch notwendige Cookies, um die Funktionalität der App sicherzustellen (z.B. Login-Status). Wir verwenden keine Tracking-Cookies oder Cookies für Werbezwecke.
+                </p>
+            </section>
+
+            <section>
+                <h2 class="text-xl font-bold text-gray-800 mb-3">9. Änderungen</h2>
+                <p>
+                    Wir behalten uns vor, diese Datenschutzerklärung anzupassen, um sie an geänderte Rechtslagen oder Änderungen unserer Dienste anzupassen. Die aktuelle Version findest du immer auf dieser Seite.
+                </p>
+            </section>
+
+            <section>
+                <p class="text-sm text-gray-500">
+                    Stand: November 2025
+                </p>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-birb-teal text-white py-8 mt-16">
+        <div class="max-w-7xl mx-auto px-4 text-center text-teal-300 text-sm">
+            <div class="flex items-center justify-center gap-2 mb-4">
+                <img src="images/birbz-icon.png" alt="Birbz" class="w-6 h-6">
+                <span>&copy; 2025 Birbz</span>
+            </div>
+            <div class="flex justify-center gap-6">
+                <a href="datenschutz.html" class="hover:text-white transition">Datenschutz</a>
+                <a href="impressum.html" class="hover:text-white transition">Impressum</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
