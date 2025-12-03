@@ -41,6 +41,11 @@
     </script>
 
     <style>
+        html, body {
+            overflow-x: hidden;
+            max-width: 100vw;
+        }
+
         .float-bird {
             animation: float 6s ease-in-out infinite;
         }
@@ -71,22 +76,22 @@
         }
     </style>
 </head>
-<body class="bg-birb-bg text-slate-800 font-sans antialiased overflow-x-hidden">
+<body class="bg-birb-bg text-slate-800 font-sans antialiased">
 
     <!-- Navbar -->
     <nav class="fixed w-full z-50 bg-birb-bg/90 backdrop-blur-md border-b border-gray-200 transition-all duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
                 <div class="flex items-center gap-2">
-                    <img src="images/birbz-icon.png" alt="Birbz" class="w-10 h-10 rounded-xl">
-                    <span class="font-bold text-2xl tracking-tight text-birb-teal">Birbz</span>
+                    <img src="images/birbz-icon.png" alt="Birbz" class="w-8 h-8 md:w-10 md:h-10 rounded-xl">
+                    <span class="font-bold text-xl md:text-2xl tracking-tight text-birb-teal">Birbz</span>
                 </div>
                 <div class="hidden md:flex space-x-8">
                     <a href="#features" class="text-gray-600 hover:text-birb-primary transition">Features</a>
                     <a href="#cards" class="text-gray-600 hover:text-birb-primary transition">Sammelkarten</a>
                     <a href="#community" class="text-gray-600 hover:text-birb-primary transition">Community</a>
                 </div>
-                <a href="https://birbz-new.vercel.app/" class="bg-birb-teal hover:bg-teal-900 text-white px-5 py-2 rounded-full font-medium transition shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+                <a href="https://birbz-new.vercel.app/" class="bg-birb-teal hover:bg-teal-900 text-white px-4 py-2 text-sm md:px-5 md:text-base rounded-full font-medium transition shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
                     App öffnen
                 </a>
             </div>
@@ -94,33 +99,33 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+    <section class="relative pt-24 pb-12 md:pt-32 md:pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
         <div class="absolute inset-0 hero-bg-pattern z-0"></div>
         
-        <div class="absolute top-20 right-0 w-72 h-72 bg-birb-primary/10 rounded-full blur-3xl -z-10"></div>
-        <div class="absolute bottom-0 left-0 w-96 h-96 bg-birb-orange/10 rounded-full blur-3xl -z-10"></div>
+        <div class="absolute top-20 right-0 w-48 md:w-72 h-48 md:h-72 bg-birb-primary/10 rounded-full blur-3xl -z-10"></div>
+        <div class="absolute bottom-0 left-0 w-64 md:w-96 h-64 md:h-96 bg-birb-orange/10 rounded-full blur-3xl -z-10"></div>
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
                 
                 <!-- Text Content -->
-                <div data-aos="fade-right" data-aos-duration="1000">
-                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange-100 text-birb-orange text-sm font-semibold mb-6">
+                <div data-aos="fade-up" data-aos-duration="1000">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange-100 text-birb-orange text-sm font-semibold mb-4 md:mb-6">
                         <span class="relative flex h-2 w-2">
                           <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-orange-400 opacity-75"></span>
                           <span class="relative inline-flex rounded-full h-2 w-2 bg-orange-500"></span>
                         </span>
                         Beta – Sei einer der Ersten
                     </div>
-                    <h1 class="text-5xl lg:text-7xl font-bold leading-tight text-gray-900 mb-6">
+                    <h1 class="text-4xl md:text-5xl lg:text-7xl font-bold leading-tight text-gray-900 mb-4 md:mb-6">
                         Entdecke die <br>
                         <span class="text-transparent bg-clip-text bg-gradient-to-r from-birb-teal to-teal-500">Vögel um dich herum</span>
                     </h1>
-                    <p class="text-xl text-gray-600 mb-8 max-w-lg leading-relaxed">
+                    <p class="text-lg md:text-xl text-gray-600 mb-6 md:mb-8 max-w-lg leading-relaxed">
                         Die App, die aus Spaziergängen Schatzsuchen macht. Erkenne Vögel per KI, verdiene Punkte und bau die größte Sammlung deines Schwarms auf.
                     </p>
                     
-                    <a href="https://birbz-new.vercel.app/" class="inline-flex justify-center items-center px-8 py-4 text-lg font-bold rounded-2xl text-white bg-birb-teal hover:bg-teal-900 shadow-lg hover:shadow-birb-teal/30 transition-all transform hover:-translate-y-1">
+                    <a href="https://birbz-new.vercel.app/" class="inline-flex justify-center items-center px-6 py-3 md:px-8 md:py-4 text-base md:text-lg font-bold rounded-2xl text-white bg-birb-teal hover:bg-teal-900 shadow-lg hover:shadow-birb-teal/30 transition-all transform hover:-translate-y-1">
                         Jetzt starten
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
@@ -129,21 +134,17 @@
                 </div>
 
                 <!-- Hero Image / Mockup -->
-                <div class="relative lg:h-[600px] flex justify-center items-center" data-aos="fade-left" data-aos-duration="1200">
-                    <svg class="absolute w-[120%] h-[120%] text-birb-teal/5 float-bird" viewBox="0 0 100 100" fill="currentColor">
-                        <path d="M20,50 Q40,10 60,50 T100,50 L100,100 L0,100 Z" />
-                    </svg>
-                    
+                <div class="relative flex justify-center items-center mt-8 lg:mt-0 lg:h-[600px]" data-aos="fade-up" data-aos-duration="1200">
                     <!-- Phone Mockup with Schwanzmeise Screenshot -->
-                    <div class="relative w-[280px] h-[560px] bg-gray-900 rounded-[3rem] border-8 border-gray-900 shadow-2xl overflow-hidden z-20 transform rotate-[-5deg] hover:rotate-0 transition duration-500">
-                        <div class="absolute top-0 w-full h-6 bg-gray-900 z-20 flex justify-center items-end pb-1">
-                            <div class="w-20 h-4 bg-black rounded-full"></div>
+                    <div class="relative w-[200px] h-[400px] md:w-[240px] md:h-[480px] lg:w-[280px] lg:h-[560px] bg-gray-900 rounded-[2rem] md:rounded-[2.5rem] lg:rounded-[3rem] border-[5px] md:border-[6px] lg:border-8 border-gray-900 shadow-2xl overflow-hidden z-20 lg:rotate-[-5deg] lg:hover:rotate-0 transition duration-500">
+                        <div class="absolute top-0 w-full h-4 md:h-5 lg:h-6 bg-gray-900 z-20 flex justify-center items-end pb-1">
+                            <div class="w-14 md:w-16 lg:w-20 h-2.5 md:h-3 lg:h-4 bg-black rounded-full"></div>
                         </div>
                         <img src="images/schwanzmeise.jpg" alt="Schwanzmeise in Birbz" class="w-full h-full object-cover object-top">
                     </div>
 
-                    <!-- Second Phone Mockup with Vogelradar -->
-                    <div class="absolute -bottom-8 -right-4 w-[180px] bg-gray-900 rounded-[2rem] p-1.5 shadow-2xl z-30 transform rotate-[8deg] hover:rotate-0 hover:scale-105 transition duration-300" data-aos="fade-up" data-aos-delay="400">
+                    <!-- Second Phone Mockup with Vogelradar - Hidden on Mobile/Tablet -->
+                    <div class="hidden lg:block absolute -bottom-8 -right-4 w-[180px] bg-gray-900 rounded-[2rem] p-1.5 shadow-2xl z-30 transform rotate-[8deg] hover:rotate-0 hover:scale-105 transition duration-300" data-aos="fade-up" data-aos-delay="400">
                         <img src="images/vogelradar.jpg" alt="Vogelradar Karte" class="rounded-[1.5rem] w-full">
                     </div>
                 </div>
@@ -152,77 +153,77 @@
     </section>
 
     <!-- Stats Banner -->
-    <div class="bg-birb-teal py-10 transform -skew-y-2">
+    <div class="bg-birb-teal py-6 md:py-10 transform -skew-y-2">
         <div class="max-w-7xl mx-auto px-4 transform skew-y-2">
-            <div class="grid grid-cols-3 gap-8 text-center text-white">
+            <div class="grid grid-cols-3 gap-4 md:gap-8 text-center text-white">
                 <div data-aos="zoom-in" data-aos-delay="0">
-                    <div class="text-3xl md:text-4xl font-bold mb-1">320+</div>
-                    <div class="text-teal-200 text-sm md:text-base">Vogelarten</div>
+                    <div class="text-2xl md:text-4xl font-bold mb-1">320+</div>
+                    <div class="text-teal-200 text-xs md:text-base">Vogelarten</div>
                 </div>
                 <div data-aos="zoom-in" data-aos-delay="100">
-                    <div class="text-3xl md:text-4xl font-bold mb-1">150+</div>
-                    <div class="text-teal-200 text-sm md:text-base">Achievements</div>
+                    <div class="text-2xl md:text-4xl font-bold mb-1">150+</div>
+                    <div class="text-teal-200 text-xs md:text-base">Achievements</div>
                 </div>
                 <div data-aos="zoom-in" data-aos-delay="200">
-                    <div class="text-3xl md:text-4xl font-bold mb-1">100%</div>
-                    <div class="text-teal-200 text-sm md:text-base">Kostenlos</div>
+                    <div class="text-2xl md:text-4xl font-bold mb-1">100%</div>
+                    <div class="text-teal-200 text-xs md:text-base">Kostenlos</div>
                 </div>
             </div>
         </div>
     </div>
 
     <!-- Section 1: AI Identification -->
-    <section id="features" class="py-24 bg-white">
+    <section id="features" class="py-16 md:py-24 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
                 <!-- Image Side - Vogel bestimmen Screenshot -->
-                <div class="order-2 md:order-1 relative" data-aos="fade-right">
-                    <div class="bg-gray-100 rounded-3xl p-4 shadow-inner">
-                        <div class="relative w-[260px] mx-auto">
-                            <div class="bg-gray-900 rounded-[2.5rem] p-2 shadow-xl">
-                                <img src="images/vogel-id.png" alt="Vogel bestimmen in Birbz" class="rounded-[2rem] w-full">
+                <div class="order-2 md:order-1 relative flex justify-center" data-aos="fade-up">
+                    <div class="bg-gray-100 rounded-2xl md:rounded-3xl p-3 md:p-4 shadow-inner">
+                        <div class="relative w-[180px] md:w-[220px] lg:w-[260px] mx-auto">
+                            <div class="bg-gray-900 rounded-[1.8rem] md:rounded-[2rem] lg:rounded-[2.5rem] p-1.5 md:p-2 shadow-xl">
+                                <img src="images/vogel-id.png" alt="Vogel bestimmen in Birbz" class="rounded-[1.5rem] md:rounded-[1.7rem] lg:rounded-[2rem] w-full">
                             </div>
                         </div>
                     </div>
                 </div>
                 
                 <!-- Content Side -->
-                <div class="order-1 md:order-2" data-aos="fade-left">
-                    <div class="inline-block px-3 py-1 mb-4 text-xs font-semibold tracking-wider text-birb-primary uppercase bg-teal-50 rounded-full">
+                <div class="order-1 md:order-2" data-aos="fade-up">
+                    <div class="inline-block px-3 py-1 mb-3 md:mb-4 text-xs font-semibold tracking-wider text-birb-primary uppercase bg-teal-50 rounded-full">
                         Powered by AI
                     </div>
-                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Foto machen. <br>Vogel erkennen.</h2>
-                    <p class="text-lg text-gray-600 mb-6">
+                    <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4 md:mb-6">Foto machen. <br>Vogel erkennen.</h2>
+                    <p class="text-base md:text-lg text-gray-600 mb-4 md:mb-6">
                         Schluss mit dem Blättern in dicken Bestimmungsbüchern. Unsere KI analysiert Form, Farbe und Umgebung in Sekunden – mit wissenschaftlich korrekter Taxonomie.
                     </p>
-                    <ul class="space-y-4">
+                    <ul class="space-y-3 md:space-y-4">
                         <li class="flex items-start">
-                            <div class="flex-shrink-0 w-6 h-6 rounded-full bg-green-100 flex items-center justify-center mt-1">
-                                <svg class="w-4 h-4 text-green-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            <div class="flex-shrink-0 w-5 h-5 md:w-6 md:h-6 rounded-full bg-green-100 flex items-center justify-center mt-0.5 md:mt-1">
+                                <svg class="w-3 h-3 md:w-4 md:h-4 text-green-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
                             </div>
-                            <span class="ml-3 text-gray-600"><strong>Foto ID:</strong> KI-Bilderkennung für schnelle Bestimmung</span>
+                            <span class="ml-2 md:ml-3 text-sm md:text-base text-gray-600"><strong>Foto ID:</strong> KI-Bilderkennung für schnelle Bestimmung</span>
                         </li>
                         <li class="flex items-start">
-                            <div class="flex-shrink-0 w-6 h-6 rounded-full bg-green-100 flex items-center justify-center mt-1">
-                                <svg class="w-4 h-4 text-green-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            <div class="flex-shrink-0 w-5 h-5 md:w-6 md:h-6 rounded-full bg-green-100 flex items-center justify-center mt-0.5 md:mt-1">
+                                <svg class="w-3 h-3 md:w-4 md:h-4 text-green-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
                             </div>
-                            <span class="ml-3 text-gray-600"><strong>Sound ID:</strong> Vogelstimmen erkennen (powered by Merlin)</span>
+                            <span class="ml-2 md:ml-3 text-sm md:text-base text-gray-600"><strong>Sound ID:</strong> Vogelstimmen erkennen (powered by Merlin)</span>
                         </li>
                         <li class="flex items-start">
-                            <div class="flex-shrink-0 w-6 h-6 rounded-full bg-green-100 flex items-center justify-center mt-1">
-                                <svg class="w-4 h-4 text-green-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            <div class="flex-shrink-0 w-5 h-5 md:w-6 md:h-6 rounded-full bg-green-100 flex items-center justify-center mt-0.5 md:mt-1">
+                                <svg class="w-3 h-3 md:w-4 md:h-4 text-green-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
                             </div>
-                            <span class="ml-3 text-gray-600"><strong>Direkt-Eingabe:</strong> Durchsuche 320+ Arten manuell</span>
+                            <span class="ml-2 md:ml-3 text-sm md:text-base text-gray-600"><strong>Direkt-Eingabe:</strong> Durchsuche 320+ Arten manuell</span>
                         </li>
                     </ul>
 
                     <!-- Urlaubsmodus Badge -->
-                    <div class="mt-8 p-4 bg-gradient-to-r from-amber-50 to-orange-50 rounded-2xl border border-amber-200">
-                        <div class="flex items-center gap-3">
-                            <span class="text-2xl">🌴</span>
+                    <div class="mt-6 md:mt-8 p-3 md:p-4 bg-gradient-to-r from-amber-50 to-orange-50 rounded-xl md:rounded-2xl border border-amber-200">
+                        <div class="flex items-center gap-2 md:gap-3">
+                            <span class="text-xl md:text-2xl">🌴</span>
                             <div>
-                                <div class="font-bold text-gray-800">Urlaubsmodus</div>
-                                <div class="text-sm text-gray-600">Im Ausland? Wechsle in den Urlaubsmodus für weltweite Vogelbestimmung.</div>
+                                <div class="font-bold text-sm md:text-base text-gray-800">Urlaubsmodus</div>
+                                <div class="text-xs md:text-sm text-gray-600">Im Ausland? Wechsle in den Urlaubsmodus für weltweite Vogelbestimmung.</div>
                             </div>
                         </div>
                     </div>
@@ -232,64 +233,64 @@
     </section>
 
     <!-- Section: Legendary Cards -->
-    <section id="cards" class="py-24 bg-gradient-to-b from-gray-900 to-gray-800 text-white relative overflow-hidden">
+    <section id="cards" class="py-16 md:py-24 bg-gradient-to-b from-gray-900 to-gray-800 text-white relative overflow-hidden">
         <!-- Background glow -->
-        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-birb-orange/20 rounded-full blur-3xl"></div>
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] md:w-[600px] h-[300px] md:h-[600px] bg-birb-orange/20 rounded-full blur-3xl"></div>
         
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-16 items-center">
                 
                 <!-- Content Side -->
-                <div data-aos="fade-right">
-                    <div class="inline-block px-3 py-1 mb-4 text-xs font-semibold tracking-wider text-yellow-400 uppercase bg-yellow-400/10 rounded-full border border-yellow-400/30">
+                <div data-aos="fade-up">
+                    <div class="inline-block px-3 py-1 mb-3 md:mb-4 text-xs font-semibold tracking-wider text-yellow-400 uppercase bg-yellow-400/10 rounded-full border border-yellow-400/30">
                         ✨ Sammelkarten
                     </div>
-                    <h2 class="text-3xl md:text-5xl font-bold mb-6">
+                    <h2 class="text-2xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6">
                         Legendäre Vögel.<br>
                         <span class="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-orange-400">Epische Karten.</span>
                     </h2>
-                    <p class="text-lg text-gray-300 mb-8">
+                    <p class="text-base md:text-lg text-gray-300 mb-6 md:mb-8">
                         Legendäre Vögel wie der Raubwürger werden zu einzigartigen Sammelkarten mit Holografik-Effekt zum Teilen.
                     </p>
                     
-                    <div class="grid grid-cols-2 gap-4 mb-8">
-                        <div class="bg-white/5 backdrop-blur rounded-xl p-4 border border-white/10">
-                            <div class="text-2xl mb-2">🃏</div>
-                            <div class="font-semibold">5 Seltenheitsstufen</div>
-                            <div class="text-sm text-gray-400">Von Gewöhnlich bis Legendär</div>
+                    <div class="grid grid-cols-2 gap-3 md:gap-4 mb-6 md:mb-8">
+                        <div class="bg-white/5 backdrop-blur rounded-lg md:rounded-xl p-3 md:p-4 border border-white/10">
+                            <div class="text-xl md:text-2xl mb-1 md:mb-2">🃏</div>
+                            <div class="font-semibold text-sm md:text-base">5 Seltenheitsstufen</div>
+                            <div class="text-xs md:text-sm text-gray-400">Von Gewöhnlich bis Legendär</div>
                         </div>
-                        <div class="bg-white/5 backdrop-blur rounded-xl p-4 border border-white/10">
-                            <div class="text-2xl mb-2">✨</div>
-                            <div class="font-semibold">Holografik-Effekt</div>
-                            <div class="text-sm text-gray-400">Bewege die Karte für den Glanz</div>
+                        <div class="bg-white/5 backdrop-blur rounded-lg md:rounded-xl p-3 md:p-4 border border-white/10">
+                            <div class="text-xl md:text-2xl mb-1 md:mb-2">✨</div>
+                            <div class="font-semibold text-sm md:text-base">Holografik-Effekt</div>
+                            <div class="text-xs md:text-sm text-gray-400">Bewege die Karte für den Glanz</div>
                         </div>
-                        <div class="bg-white/5 backdrop-blur rounded-xl p-4 border border-white/10">
-                            <div class="text-2xl mb-2">📤</div>
-                            <div class="font-semibold">Teilen & Speichern</div>
-                            <div class="text-sm text-gray-400">Zeig deine Funde der Welt</div>
+                        <div class="bg-white/5 backdrop-blur rounded-lg md:rounded-xl p-3 md:p-4 border border-white/10">
+                            <div class="text-xl md:text-2xl mb-1 md:mb-2">📤</div>
+                            <div class="font-semibold text-sm md:text-base">Teilen & Speichern</div>
+                            <div class="text-xs md:text-sm text-gray-400">Zeig deine Funde der Welt</div>
                         </div>
-                        <div class="bg-white/5 backdrop-blur rounded-xl p-4 border border-white/10">
-                            <div class="text-2xl mb-2">📚</div>
-                            <div class="font-semibold">Wissenschaftlich korrekt</div>
-                            <div class="text-sm text-gray-400">Taxonomie & Artbeschreibung</div>
+                        <div class="bg-white/5 backdrop-blur rounded-lg md:rounded-xl p-3 md:p-4 border border-white/10">
+                            <div class="text-xl md:text-2xl mb-1 md:mb-2">📚</div>
+                            <div class="font-semibold text-sm md:text-base">Wissenschaftlich korrekt</div>
+                            <div class="text-xs md:text-sm text-gray-400">Taxonomie & Artbeschreibung</div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Card Display -->
-                <div class="relative flex justify-center items-center" data-aos="fade-left">
+                <div class="relative flex justify-center items-center" data-aos="fade-up">
                     <div class="relative">
                         <!-- Glow effect behind card -->
                         <div class="absolute inset-0 bg-gradient-to-r from-yellow-400 to-orange-500 blur-2xl opacity-30 scale-110"></div>
                         
                         <!-- Legendary Card -->
-                        <div class="relative w-[300px] md:w-[350px] transform hover:scale-105 transition duration-500 hover:rotate-1">
-                            <img src="images/raubwuerger-legendary.png" alt="Legendäre Raubwürger Karte" class="rounded-2xl shadow-2xl w-full card-glow">
-                            <div class="absolute inset-0 rounded-2xl legendary-shimmer pointer-events-none"></div>
+                        <div class="relative w-[220px] md:w-[300px] lg:w-[350px] transform hover:scale-105 transition duration-500 hover:rotate-1">
+                            <img src="images/raubwuerger-legendary.png" alt="Legendäre Raubwürger Karte" class="rounded-xl md:rounded-2xl shadow-2xl w-full card-glow">
+                            <div class="absolute inset-0 rounded-xl md:rounded-2xl legendary-shimmer pointer-events-none"></div>
                         </div>
 
                         <!-- Small info badge -->
-                        <div class="absolute -bottom-6 left-1/2 -translate-x-1/2 bg-white text-gray-800 px-4 py-2 rounded-full shadow-lg text-sm font-medium whitespace-nowrap">
+                        <div class="absolute -bottom-5 md:-bottom-6 left-1/2 -translate-x-1/2 bg-white text-gray-800 px-3 md:px-4 py-1.5 md:py-2 rounded-full shadow-lg text-xs md:text-sm font-medium whitespace-nowrap">
                             Raubwürger · <span class="text-yellow-600">Legendär</span> · +500 XP
                         </div>
                     </div>
@@ -299,79 +300,79 @@
     </section>
 
     <!-- Section: Gamification -->
-    <section class="py-24 bg-birb-bg relative overflow-hidden">
+    <section class="py-16 md:py-24 bg-birb-bg relative overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16" data-aos="fade-up">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Sammeln. Leveln. Dominieren.</h2>
-                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Verwandle jeden Spaziergang in eine Schatzsuche. Baue deine Sammlung auf und steige im Rang auf.</p>
+            <div class="text-center mb-10 md:mb-16" data-aos="fade-up">
+                <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-3 md:mb-4">Sammeln. Leveln. Dominieren.</h2>
+                <p class="text-base md:text-lg text-gray-600 max-w-2xl mx-auto">Verwandle jeden Spaziergang in eine Schatzsuche. Baue deine Sammlung auf und steige im Rang auf.</p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8">
                 <!-- Card 1: XP -->
-                <div class="bg-white rounded-3xl p-8 shadow-sm hover:shadow-md transition-shadow" data-aos="fade-up" data-aos-delay="100">
-                    <div class="w-14 h-14 bg-yellow-100 rounded-2xl flex items-center justify-center text-3xl mb-6">⚡</div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">XP & Level</h3>
-                    <p class="text-gray-600">Jede Sichtung bringt Punkte. Seltene Vögel katapultieren dich schneller ins nächste Level.</p>
+                <div class="bg-white rounded-2xl md:rounded-3xl p-6 md:p-8 shadow-sm hover:shadow-md transition-shadow" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-12 h-12 md:w-14 md:h-14 bg-yellow-100 rounded-xl md:rounded-2xl flex items-center justify-center text-2xl md:text-3xl mb-4 md:mb-6">⚡</div>
+                    <h3 class="text-lg md:text-xl font-bold text-gray-900 mb-2 md:mb-3">XP & Level</h3>
+                    <p class="text-sm md:text-base text-gray-600">Jede Sichtung bringt Punkte. Seltene Vögel katapultieren dich schneller ins nächste Level.</p>
                 </div>
 
                 <!-- Card 2: Achievements -->
-                <div class="bg-white rounded-3xl p-8 shadow-sm hover:shadow-md transition-shadow" data-aos="fade-up" data-aos-delay="200">
-                    <div class="w-14 h-14 bg-birb-teal/10 rounded-2xl flex items-center justify-center text-3xl mb-6">🏅</div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">150+ Badges</h3>
-                    <p class="text-gray-600">Werde zum "Eulen-Flüsterer" oder "Park-Ranger". Spezielle Herausforderungen warten auf dich.</p>
+                <div class="bg-white rounded-2xl md:rounded-3xl p-6 md:p-8 shadow-sm hover:shadow-md transition-shadow" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-12 h-12 md:w-14 md:h-14 bg-birb-teal/10 rounded-xl md:rounded-2xl flex items-center justify-center text-2xl md:text-3xl mb-4 md:mb-6">🏅</div>
+                    <h3 class="text-lg md:text-xl font-bold text-gray-900 mb-2 md:mb-3">150+ Badges</h3>
+                    <p class="text-sm md:text-base text-gray-600">Werde zum "Eulen-Flüsterer" oder "Park-Ranger". Spezielle Herausforderungen warten auf dich.</p>
                 </div>
 
                 <!-- Card 3: Streaks -->
-                <div class="bg-white rounded-3xl p-8 shadow-sm hover:shadow-md transition-shadow" data-aos="fade-up" data-aos-delay="300">
-                    <div class="w-14 h-14 bg-orange-100 rounded-2xl flex items-center justify-center text-3xl mb-6">🔥</div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">Daily Streaks</h3>
-                    <p class="text-gray-600">Bleib am Ball! Tägliche Beobachtungen halten deine Flamme am Leben und schalten Boni frei.</p>
+                <div class="bg-white rounded-2xl md:rounded-3xl p-6 md:p-8 shadow-sm hover:shadow-md transition-shadow" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-12 h-12 md:w-14 md:h-14 bg-orange-100 rounded-xl md:rounded-2xl flex items-center justify-center text-2xl md:text-3xl mb-4 md:mb-6">🔥</div>
+                    <h3 class="text-lg md:text-xl font-bold text-gray-900 mb-2 md:mb-3">Daily Streaks</h3>
+                    <p class="text-sm md:text-base text-gray-600">Bleib am Ball! Tägliche Beobachtungen halten deine Flamme am Leben und schalten Boni frei.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Section: Collection Preview -->
-    <section class="py-24 bg-white">
+    <section class="py-16 md:py-24 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
                 
                 <!-- Phone Mockup -->
-                <div class="relative flex justify-center" data-aos="fade-right">
-                    <div class="relative w-[280px]">
-                        <div class="bg-gray-900 rounded-[2.5rem] p-2 shadow-2xl">
-                            <img src="images/sammlung.png" alt="Vogelsammlung in Birbz" class="rounded-[2rem] w-full">
+                <div class="relative flex justify-center" data-aos="fade-up">
+                    <div class="relative w-[200px] md:w-[240px] lg:w-[280px]">
+                        <div class="bg-gray-900 rounded-[2rem] md:rounded-[2.5rem] p-1.5 md:p-2 shadow-2xl">
+                            <img src="images/sammlung.png" alt="Vogelsammlung in Birbz" class="rounded-[1.7rem] md:rounded-[2rem] w-full">
                         </div>
                     </div>
                 </div>
 
                 <!-- Content Side -->
-                <div data-aos="fade-left">
-                    <div class="inline-block px-3 py-1 mb-4 text-xs font-semibold tracking-wider text-birb-primary uppercase bg-teal-50 rounded-full">
+                <div data-aos="fade-up">
+                    <div class="inline-block px-3 py-1 mb-3 md:mb-4 text-xs font-semibold tracking-wider text-birb-primary uppercase bg-teal-50 rounded-full">
                         Deine Sammlung
                     </div>
-                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Alle Vögel <br>auf einen Blick.</h2>
-                    <p class="text-lg text-gray-600 mb-6">
+                    <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4 md:mb-6">Alle Vögel <br>auf einen Blick.</h2>
+                    <p class="text-base md:text-lg text-gray-600 mb-4 md:mb-6">
                         Deine gefundenen Arten übersichtlich nach Familien sortiert. Sieh auf einen Blick, welche dir noch fehlen – und mach dich auf die Jagd.
                     </p>
-                    <ul class="space-y-4">
+                    <ul class="space-y-3 md:space-y-4">
                         <li class="flex items-start">
-                            <div class="flex-shrink-0 w-6 h-6 rounded-full bg-green-100 flex items-center justify-center mt-1">
-                                <svg class="w-4 h-4 text-green-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            <div class="flex-shrink-0 w-5 h-5 md:w-6 md:h-6 rounded-full bg-green-100 flex items-center justify-center mt-0.5 md:mt-1">
+                                <svg class="w-3 h-3 md:w-4 md:h-4 text-green-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
                             </div>
-                            <span class="ml-3 text-gray-600">320+ Arten in 30+ Vogelfamilien</span>
+                            <span class="ml-2 md:ml-3 text-sm md:text-base text-gray-600">320+ Arten in 30+ Vogelfamilien</span>
                         </li>
                         <li class="flex items-start">
-                            <div class="flex-shrink-0 w-6 h-6 rounded-full bg-green-100 flex items-center justify-center mt-1">
-                                <svg class="w-4 h-4 text-green-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            <div class="flex-shrink-0 w-5 h-5 md:w-6 md:h-6 rounded-full bg-green-100 flex items-center justify-center mt-0.5 md:mt-1">
+                                <svg class="w-3 h-3 md:w-4 md:h-4 text-green-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
                             </div>
-                            <span class="ml-3 text-gray-600">Fortschrittsanzeige pro Familie</span>
+                            <span class="ml-2 md:ml-3 text-sm md:text-base text-gray-600">Fortschrittsanzeige pro Familie</span>
                         </li>
                         <li class="flex items-start">
-                            <div class="flex-shrink-0 w-6 h-6 rounded-full bg-green-100 flex items-center justify-center mt-1">
-                                <svg class="w-4 h-4 text-green-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            <div class="flex-shrink-0 w-5 h-5 md:w-6 md:h-6 rounded-full bg-green-100 flex items-center justify-center mt-0.5 md:mt-1">
+                                <svg class="w-3 h-3 md:w-4 md:h-4 text-green-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
                             </div>
-                            <span class="ml-3 text-gray-600">Detailseite mit Fotos & Infos zu jeder Art</span>
+                            <span class="ml-2 md:ml-3 text-sm md:text-base text-gray-600">Detailseite mit Fotos & Infos zu jeder Art</span>
                         </li>
                     </ul>
                 </div>
@@ -380,46 +381,46 @@
     </section>
 
     <!-- Section: Vogelradar -->
-    <section class="py-24 bg-birb-bg">
+    <section class="py-16 md:py-24 bg-birb-bg">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
                 
                 <!-- Phone Mockup -->
-                <div class="relative flex justify-center order-2 md:order-1" data-aos="fade-right">
-                    <div class="relative w-[280px]">
-                        <div class="bg-gray-900 rounded-[2.5rem] p-2 shadow-2xl">
-                            <img src="images/vogelradar.jpg" alt="Vogelradar Karte" class="rounded-[2rem] w-full">
+                <div class="relative flex justify-center order-2 md:order-1" data-aos="fade-up">
+                    <div class="relative w-[200px] md:w-[240px] lg:w-[280px]">
+                        <div class="bg-gray-900 rounded-[2rem] md:rounded-[2.5rem] p-1.5 md:p-2 shadow-2xl">
+                            <img src="images/vogelradar.jpg" alt="Vogelradar Karte" class="rounded-[1.7rem] md:rounded-[2rem] w-full">
                         </div>
                     </div>
                 </div>
 
                 <!-- Content Side -->
-                <div class="order-1 md:order-2" data-aos="fade-left">
-                    <div class="inline-block px-3 py-1 mb-4 text-xs font-semibold tracking-wider text-birb-primary uppercase bg-teal-50 rounded-full">
+                <div class="order-1 md:order-2" data-aos="fade-up">
+                    <div class="inline-block px-3 py-1 mb-3 md:mb-4 text-xs font-semibold tracking-wider text-birb-primary uppercase bg-teal-50 rounded-full">
                         📍 Vogelradar
                     </div>
-                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Sieh, was die <br>Community entdeckt.</h2>
-                    <p class="text-lg text-gray-600 mb-6">
+                    <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4 md:mb-6">Sieh, was die <br>Community entdeckt.</h2>
+                    <p class="text-base md:text-lg text-gray-600 mb-4 md:mb-6">
                         Alle Sichtungen der Community auf einer Karte. Finde heraus, welche Arten gerade in deiner Umgebung gesichtet werden.
                     </p>
-                    <ul class="space-y-4">
+                    <ul class="space-y-3 md:space-y-4">
                         <li class="flex items-start">
-                            <div class="flex-shrink-0 w-6 h-6 rounded-full bg-teal-100 flex items-center justify-center mt-1">
+                            <div class="flex-shrink-0 w-5 h-5 md:w-6 md:h-6 rounded-full bg-teal-100 flex items-center justify-center mt-0.5 md:mt-1">
                                 <span class="text-teal-600 text-xs">●</span>
                             </div>
-                            <span class="ml-3 text-gray-600"><strong>Häufig, Selten, Legendär</strong> – Farbcodiert nach Seltenheit</span>
+                            <span class="ml-2 md:ml-3 text-sm md:text-base text-gray-600"><strong>Häufig, Selten, Legendär</strong> – Farbcodiert nach Seltenheit</span>
                         </li>
                         <li class="flex items-start">
-                            <div class="flex-shrink-0 w-6 h-6 rounded-full bg-green-100 flex items-center justify-center mt-1">
-                                <svg class="w-4 h-4 text-green-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            <div class="flex-shrink-0 w-5 h-5 md:w-6 md:h-6 rounded-full bg-green-100 flex items-center justify-center mt-0.5 md:mt-1">
+                                <svg class="w-3 h-3 md:w-4 md:h-4 text-green-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
                             </div>
-                            <span class="ml-3 text-gray-600">Filter: Heute, 3 Tage oder 7 Tage</span>
+                            <span class="ml-2 md:ml-3 text-sm md:text-base text-gray-600">Filter: Heute, 3 Tage oder 7 Tage</span>
                         </li>
                         <li class="flex items-start">
-                            <div class="flex-shrink-0 w-6 h-6 rounded-full bg-green-100 flex items-center justify-center mt-1">
-                                <svg class="w-4 h-4 text-green-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            <div class="flex-shrink-0 w-5 h-5 md:w-6 md:h-6 rounded-full bg-green-100 flex items-center justify-center mt-0.5 md:mt-1">
+                                <svg class="w-3 h-3 md:w-4 md:h-4 text-green-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
                             </div>
-                            <span class="ml-3 text-gray-600">Tippe auf einen Marker für Details zur Sichtung</span>
+                            <span class="ml-2 md:ml-3 text-sm md:text-base text-gray-600">Tippe auf einen Marker für Details zur Sichtung</span>
                         </li>
                     </ul>
                 </div>
@@ -428,70 +429,70 @@
     </section>
 
     <!-- Section: Community / Circles -->
-    <section id="community" class="py-24 bg-white">
+    <section id="community" class="py-16 md:py-24 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
                 
                 <!-- Content Side -->
-                <div data-aos="fade-right">
-                    <div class="inline-block px-3 py-1 mb-4 text-xs font-semibold tracking-wider text-birb-orange uppercase bg-orange-50 rounded-full">
+                <div data-aos="fade-up">
+                    <div class="inline-block px-3 py-1 mb-3 md:mb-4 text-xs font-semibold tracking-wider text-birb-orange uppercase bg-orange-50 rounded-full">
                         Circles
                     </div>
-                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Dein Schwarm, <br>deine Regeln.</h2>
-                    <p class="text-lg text-gray-600 mb-6">
+                    <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4 md:mb-6">Dein Schwarm, <br>deine Regeln.</h2>
+                    <p class="text-base md:text-lg text-gray-600 mb-4 md:mb-6">
                         Gründe deinen eigenen Circle oder tritt bestehenden bei. Vergleiche deine Sichtungen mit Freunden und klettere gemeinsam die Leaderboards hoch.
                     </p>
-                    <ul class="space-y-4">
+                    <ul class="space-y-3 md:space-y-4">
                         <li class="flex items-start">
-                            <div class="flex-shrink-0 w-6 h-6 rounded-full bg-orange-100 flex items-center justify-center mt-1">
-                                <span class="text-birb-orange text-sm">👥</span>
+                            <div class="flex-shrink-0 w-5 h-5 md:w-6 md:h-6 rounded-full bg-orange-100 flex items-center justify-center mt-0.5 md:mt-1">
+                                <span class="text-birb-orange text-xs md:text-sm">👥</span>
                             </div>
-                            <span class="ml-3 text-gray-600">Private oder öffentliche Gruppen</span>
+                            <span class="ml-2 md:ml-3 text-sm md:text-base text-gray-600">Private oder öffentliche Gruppen</span>
                         </li>
                         <li class="flex items-start">
-                            <div class="flex-shrink-0 w-6 h-6 rounded-full bg-orange-100 flex items-center justify-center mt-1">
-                                <span class="text-birb-orange text-sm">📊</span>
+                            <div class="flex-shrink-0 w-5 h-5 md:w-6 md:h-6 rounded-full bg-orange-100 flex items-center justify-center mt-0.5 md:mt-1">
+                                <span class="text-birb-orange text-xs md:text-sm">📊</span>
                             </div>
-                            <span class="ml-3 text-gray-600">Regionale Leaderboards</span>
+                            <span class="ml-2 md:ml-3 text-sm md:text-base text-gray-600">Regionale Leaderboards</span>
                         </li>
                     </ul>
                 </div>
 
                 <!-- Visual Side -->
-                <div class="relative" data-aos="fade-left">
-                    <div class="bg-birb-bg rounded-3xl p-6 shadow-inner">
-                        <div class="bg-white rounded-2xl shadow-lg p-6">
-                            <div class="flex items-center justify-between mb-6">
-                                <h4 class="font-bold text-lg text-gray-800">🏆 Leaderboard</h4>
-                                <span class="text-sm text-gray-500">Diese Woche</span>
+                <div class="relative" data-aos="fade-up">
+                    <div class="bg-birb-bg rounded-2xl md:rounded-3xl p-4 md:p-6 shadow-inner">
+                        <div class="bg-white rounded-xl md:rounded-2xl shadow-lg p-4 md:p-6">
+                            <div class="flex items-center justify-between mb-4 md:mb-6">
+                                <h4 class="font-bold text-base md:text-lg text-gray-800">🏆 Leaderboard</h4>
+                                <span class="text-xs md:text-sm text-gray-500">Diese Woche</span>
                             </div>
-                            <div class="space-y-4">
-                                <div class="flex items-center gap-4 p-3 bg-yellow-50 rounded-xl border-2 border-yellow-200">
-                                    <span class="text-2xl">🥇</span>
-                                    <div class="w-10 h-10 rounded-full bg-gradient-to-br from-yellow-300 to-orange-400"></div>
-                                    <div class="flex-1">
-                                        <div class="font-semibold text-gray-800">VogelProfi_92</div>
-                                        <div class="text-sm text-gray-500">47 Arten</div>
+                            <div class="space-y-3 md:space-y-4">
+                                <div class="flex items-center gap-2 md:gap-4 p-2 md:p-3 bg-yellow-50 rounded-lg md:rounded-xl border-2 border-yellow-200">
+                                    <span class="text-lg md:text-2xl">🥇</span>
+                                    <div class="w-8 h-8 md:w-10 md:h-10 rounded-full bg-gradient-to-br from-yellow-300 to-orange-400"></div>
+                                    <div class="flex-1 min-w-0">
+                                        <div class="font-semibold text-sm md:text-base text-gray-800 truncate">VogelProfi_92</div>
+                                        <div class="text-xs md:text-sm text-gray-500">47 Arten</div>
                                     </div>
-                                    <div class="text-birb-teal font-bold">2.340 XP</div>
+                                    <div class="text-birb-teal font-bold text-sm md:text-base">2.340 XP</div>
                                 </div>
-                                <div class="flex items-center gap-4 p-3 bg-gray-50 rounded-xl">
-                                    <span class="text-2xl">🥈</span>
-                                    <div class="w-10 h-10 rounded-full bg-gradient-to-br from-gray-300 to-gray-400"></div>
-                                    <div class="flex-1">
-                                        <div class="font-semibold text-gray-800">NaturLiebe</div>
-                                        <div class="text-sm text-gray-500">38 Arten</div>
+                                <div class="flex items-center gap-2 md:gap-4 p-2 md:p-3 bg-gray-50 rounded-lg md:rounded-xl">
+                                    <span class="text-lg md:text-2xl">🥈</span>
+                                    <div class="w-8 h-8 md:w-10 md:h-10 rounded-full bg-gradient-to-br from-gray-300 to-gray-400"></div>
+                                    <div class="flex-1 min-w-0">
+                                        <div class="font-semibold text-sm md:text-base text-gray-800 truncate">NaturLiebe</div>
+                                        <div class="text-xs md:text-sm text-gray-500">38 Arten</div>
                                     </div>
-                                    <div class="text-birb-teal font-bold">1.890 XP</div>
+                                    <div class="text-birb-teal font-bold text-sm md:text-base">1.890 XP</div>
                                 </div>
-                                <div class="flex items-center gap-4 p-3 bg-orange-50 rounded-xl">
-                                    <span class="text-2xl">🥉</span>
-                                    <div class="w-10 h-10 rounded-full bg-gradient-to-br from-orange-300 to-orange-500"></div>
-                                    <div class="flex-1">
-                                        <div class="font-semibold text-gray-800">BirbWatcher</div>
-                                        <div class="text-sm text-gray-500">31 Arten</div>
+                                <div class="flex items-center gap-2 md:gap-4 p-2 md:p-3 bg-orange-50 rounded-lg md:rounded-xl">
+                                    <span class="text-lg md:text-2xl">🥉</span>
+                                    <div class="w-8 h-8 md:w-10 md:h-10 rounded-full bg-gradient-to-br from-orange-300 to-orange-500"></div>
+                                    <div class="flex-1 min-w-0">
+                                        <div class="font-semibold text-sm md:text-base text-gray-800 truncate">BirbWatcher</div>
+                                        <div class="text-xs md:text-sm text-gray-500">31 Arten</div>
                                     </div>
-                                    <div class="text-birb-teal font-bold">1.540 XP</div>
+                                    <div class="text-birb-teal font-bold text-sm md:text-base">1.540 XP</div>
                                 </div>
                             </div>
                         </div>
@@ -502,59 +503,59 @@
     </section>
 
     <!-- Section: How it works -->
-    <section class="py-24 bg-birb-bg">
+    <section class="py-16 md:py-24 bg-birb-bg">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-900">So startest du durch</h2>
+            <div class="text-center mb-10 md:mb-16">
+                <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900">So startest du durch</h2>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 relative">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 relative">
                 <div class="hidden md:block absolute top-12 left-0 w-full h-0.5 bg-gray-200 -z-10"></div>
 
                 <!-- Step 1 -->
                 <div class="text-center" data-aos="fade-up" data-aos-delay="0">
-                    <div class="w-24 h-24 mx-auto bg-birb-teal text-white rounded-full flex items-center justify-center text-3xl font-bold shadow-lg mb-6 border-8 border-birb-bg relative z-10">1</div>
-                    <h3 class="text-xl font-bold mb-2">Öffnen</h3>
-                    <p class="text-gray-500">Kein Download nötig. Birbz läuft direkt als Web-App in deinem Browser.</p>
+                    <div class="w-16 h-16 md:w-24 md:h-24 mx-auto bg-birb-teal text-white rounded-full flex items-center justify-center text-2xl md:text-3xl font-bold shadow-lg mb-4 md:mb-6 border-4 md:border-8 border-birb-bg relative z-10">1</div>
+                    <h3 class="text-lg md:text-xl font-bold mb-2">Öffnen</h3>
+                    <p class="text-sm md:text-base text-gray-500">Kein Download nötig. Birbz läuft direkt als Web-App in deinem Browser.</p>
                 </div>
 
                 <!-- Step 2 -->
                 <div class="text-center" data-aos="fade-up" data-aos-delay="200">
-                    <div class="w-24 h-24 mx-auto bg-white text-birb-teal border-2 border-birb-teal rounded-full flex items-center justify-center text-3xl font-bold shadow-lg mb-6 relative z-10">2</div>
-                    <h3 class="text-xl font-bold mb-2">Scannen</h3>
-                    <p class="text-gray-500">Mach ein Foto von einem Vogel. Die KI identifiziert die Art in Sekunden.</p>
+                    <div class="w-16 h-16 md:w-24 md:h-24 mx-auto bg-white text-birb-teal border-2 border-birb-teal rounded-full flex items-center justify-center text-2xl md:text-3xl font-bold shadow-lg mb-4 md:mb-6 relative z-10">2</div>
+                    <h3 class="text-lg md:text-xl font-bold mb-2">Scannen</h3>
+                    <p class="text-sm md:text-base text-gray-500">Mach ein Foto von einem Vogel. Die KI identifiziert die Art in Sekunden.</p>
                 </div>
 
                 <!-- Step 3 -->
                 <div class="text-center" data-aos="fade-up" data-aos-delay="400">
-                    <div class="w-24 h-24 mx-auto bg-birb-orange text-white rounded-full flex items-center justify-center text-3xl font-bold shadow-lg mb-6 border-8 border-birb-bg relative z-10">3</div>
-                    <h3 class="text-xl font-bold mb-2">Sammeln</h3>
-                    <p class="text-gray-500">Fülle deine Vogel-Sammlung, schalte Badges frei und steige im Leaderboard auf.</p>
+                    <div class="w-16 h-16 md:w-24 md:h-24 mx-auto bg-birb-orange text-white rounded-full flex items-center justify-center text-2xl md:text-3xl font-bold shadow-lg mb-4 md:mb-6 border-4 md:border-8 border-birb-bg relative z-10">3</div>
+                    <h3 class="text-lg md:text-xl font-bold mb-2">Sammeln</h3>
+                    <p class="text-sm md:text-base text-gray-500">Fülle deine Vogel-Sammlung, schalte Badges frei und steige im Leaderboard auf.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Section: Install PWA -->
-    <section class="py-16 bg-white">
+    <section class="py-12 md:py-16 bg-white">
         <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="bg-gradient-to-br from-birb-teal to-teal-700 rounded-3xl p-8 md:p-12 text-white text-center" data-aos="fade-up">
-                <div class="inline-block px-3 py-1 mb-4 text-xs font-semibold tracking-wider uppercase bg-white/20 rounded-full">
+            <div class="bg-gradient-to-br from-birb-teal to-teal-700 rounded-2xl md:rounded-3xl p-6 md:p-12 text-white text-center" data-aos="fade-up">
+                <div class="inline-block px-3 py-1 mb-3 md:mb-4 text-xs font-semibold tracking-wider uppercase bg-white/20 rounded-full">
                     📲 Tipp
                 </div>
-                <h2 class="text-2xl md:text-3xl font-bold mb-4">Birbz auf dein Handy holen</h2>
-                <p class="text-teal-100 mb-8 max-w-xl mx-auto">
+                <h2 class="text-xl md:text-2xl lg:text-3xl font-bold mb-3 md:mb-4">Birbz auf dein Handy holen</h2>
+                <p class="text-sm md:text-base text-teal-100 mb-6 md:mb-8 max-w-xl mx-auto">
                     Kein App Store nötig. Installiere Birbz direkt als App auf deinem Homescreen – mit Offline-Support.
                 </p>
                 
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-left max-w-2xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 text-left max-w-2xl mx-auto">
                     <!-- iOS -->
-                    <div class="bg-white/10 backdrop-blur rounded-2xl p-6">
-                        <div class="flex items-center gap-3 mb-4">
-                            <div class="w-10 h-10 bg-white/20 rounded-xl flex items-center justify-center text-xl">🍎</div>
-                            <span class="font-bold">iPhone / iPad</span>
+                    <div class="bg-white/10 backdrop-blur rounded-xl md:rounded-2xl p-4 md:p-6">
+                        <div class="flex items-center gap-2 md:gap-3 mb-3 md:mb-4">
+                            <div class="w-8 h-8 md:w-10 md:h-10 bg-white/20 rounded-lg md:rounded-xl flex items-center justify-center text-lg md:text-xl">🍎</div>
+                            <span class="font-bold text-sm md:text-base">iPhone / iPad</span>
                         </div>
-                        <ol class="space-y-2 text-sm text-teal-100">
+                        <ol class="space-y-1.5 md:space-y-2 text-xs md:text-sm text-teal-100">
                             <li class="flex items-start gap-2">
                                 <span class="font-bold text-white">1.</span>
                                 <span>Öffne Birbz in Safari</span>
@@ -571,12 +572,12 @@
                     </div>
                     
                     <!-- Android -->
-                    <div class="bg-white/10 backdrop-blur rounded-2xl p-6">
-                        <div class="flex items-center gap-3 mb-4">
-                            <div class="w-10 h-10 bg-white/20 rounded-xl flex items-center justify-center text-xl">🤖</div>
-                            <span class="font-bold">Android</span>
+                    <div class="bg-white/10 backdrop-blur rounded-xl md:rounded-2xl p-4 md:p-6">
+                        <div class="flex items-center gap-2 md:gap-3 mb-3 md:mb-4">
+                            <div class="w-8 h-8 md:w-10 md:h-10 bg-white/20 rounded-lg md:rounded-xl flex items-center justify-center text-lg md:text-xl">🤖</div>
+                            <span class="font-bold text-sm md:text-base">Android</span>
                         </div>
-                        <ol class="space-y-2 text-sm text-teal-100">
+                        <ol class="space-y-1.5 md:space-y-2 text-xs md:text-sm text-teal-100">
                             <li class="flex items-start gap-2">
                                 <span class="font-bold text-white">1.</span>
                                 <span>Öffne Birbz in Chrome</span>
@@ -597,57 +598,57 @@
     </section>
 
     <!-- Section: Ethical Birding -->
-    <section class="py-24 bg-birb-bg">
+    <section class="py-16 md:py-24 bg-birb-bg">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
                 
                 <!-- Content Side -->
-                <div data-aos="fade-right">
-                    <div class="inline-block px-3 py-1 mb-4 text-xs font-semibold tracking-wider text-green-600 uppercase bg-green-50 rounded-full">
+                <div data-aos="fade-up">
+                    <div class="inline-block px-3 py-1 mb-3 md:mb-4 text-xs font-semibold tracking-wider text-green-600 uppercase bg-green-50 rounded-full">
                         💚 Ehrenkodex
                     </div>
-                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Respektvolle <br>Vogelbeobachtung.</h2>
-                    <p class="text-lg text-gray-600 mb-8">
+                    <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4 md:mb-6">Respektvolle <br>Vogelbeobachtung.</h2>
+                    <p class="text-base md:text-lg text-gray-600 mb-6 md:mb-8">
                         Birbz steht für verantwortungsvolles Birding. Die Natur genießen – ohne ihr zu schaden.
                     </p>
                 </div>
 
                 <!-- Rules Side -->
-                <div data-aos="fade-left">
-                    <div class="space-y-4">
-                        <div class="flex items-start gap-4 p-4 bg-white rounded-2xl shadow-sm">
-                            <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center text-xl flex-shrink-0">👁️</div>
+                <div data-aos="fade-up">
+                    <div class="space-y-3 md:space-y-4">
+                        <div class="flex items-start gap-3 md:gap-4 p-3 md:p-4 bg-white rounded-xl md:rounded-2xl shadow-sm">
+                            <div class="w-10 h-10 md:w-12 md:h-12 bg-green-100 rounded-lg md:rounded-xl flex items-center justify-center text-lg md:text-xl flex-shrink-0">👁️</div>
                             <div>
-                                <div class="font-bold text-gray-800">Abstand halten</div>
-                                <div class="text-sm text-gray-600">Beobachte aus der Distanz. Nähere dich nicht zu weit an.</div>
+                                <div class="font-bold text-sm md:text-base text-gray-800">Abstand halten</div>
+                                <div class="text-xs md:text-sm text-gray-600">Beobachte aus der Distanz. Nähere dich nicht zu weit an.</div>
                             </div>
                         </div>
-                        <div class="flex items-start gap-4 p-4 bg-white rounded-2xl shadow-sm">
-                            <div class="w-12 h-12 bg-yellow-100 rounded-xl flex items-center justify-center text-xl flex-shrink-0">⚠️</div>
+                        <div class="flex items-start gap-3 md:gap-4 p-3 md:p-4 bg-white rounded-xl md:rounded-2xl shadow-sm">
+                            <div class="w-10 h-10 md:w-12 md:h-12 bg-yellow-100 rounded-lg md:rounded-xl flex items-center justify-center text-lg md:text-xl flex-shrink-0">⚠️</div>
                             <div>
-                                <div class="font-bold text-gray-800">Nistende Vögel nicht stören</div>
-                                <div class="text-sm text-gray-600">Halte dich von Nestern fern, besonders während der Brutzeit.</div>
+                                <div class="font-bold text-sm md:text-base text-gray-800">Nistende Vögel nicht stören</div>
+                                <div class="text-xs md:text-sm text-gray-600">Halte dich von Nestern fern, besonders während der Brutzeit.</div>
                             </div>
                         </div>
-                        <div class="flex items-start gap-4 p-4 bg-white rounded-2xl shadow-sm">
-                            <div class="w-12 h-12 bg-amber-100 rounded-xl flex items-center justify-center text-xl flex-shrink-0">🌿</div>
+                        <div class="flex items-start gap-3 md:gap-4 p-3 md:p-4 bg-white rounded-xl md:rounded-2xl shadow-sm">
+                            <div class="w-10 h-10 md:w-12 md:h-12 bg-amber-100 rounded-lg md:rounded-xl flex items-center justify-center text-lg md:text-xl flex-shrink-0">🌿</div>
                             <div>
-                                <div class="font-bold text-gray-800">Auf Wegen bleiben</div>
-                                <div class="text-sm text-gray-600">Bodenbrüter wie Feldlerchen und Kiebitze brüten am Boden.</div>
+                                <div class="font-bold text-sm md:text-base text-gray-800">Auf Wegen bleiben</div>
+                                <div class="text-xs md:text-sm text-gray-600">Bodenbrüter wie Feldlerchen und Kiebitze brüten am Boden.</div>
                             </div>
                         </div>
-                        <div class="flex items-start gap-4 p-4 bg-white rounded-2xl shadow-sm">
-                            <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center text-xl flex-shrink-0">🌲</div>
+                        <div class="flex items-start gap-3 md:gap-4 p-3 md:p-4 bg-white rounded-xl md:rounded-2xl shadow-sm">
+                            <div class="w-10 h-10 md:w-12 md:h-12 bg-green-100 rounded-lg md:rounded-xl flex items-center justify-center text-lg md:text-xl flex-shrink-0">🌲</div>
                             <div>
-                                <div class="font-bold text-gray-800">Naturschutzgebiete respektieren</div>
-                                <div class="text-sm text-gray-600">Beachte Betretungsverbote und halte dich an ausgewiesene Wege.</div>
+                                <div class="font-bold text-sm md:text-base text-gray-800">Naturschutzgebiete respektieren</div>
+                                <div class="text-xs md:text-sm text-gray-600">Beachte Betretungsverbote und halte dich an ausgewiesene Wege.</div>
                             </div>
                         </div>
-                        <div class="flex items-start gap-4 p-4 bg-white rounded-2xl shadow-sm">
-                            <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center text-xl flex-shrink-0">🔇</div>
+                        <div class="flex items-start gap-3 md:gap-4 p-3 md:p-4 bg-white rounded-xl md:rounded-2xl shadow-sm">
+                            <div class="w-10 h-10 md:w-12 md:h-12 bg-purple-100 rounded-lg md:rounded-xl flex items-center justify-center text-lg md:text-xl flex-shrink-0">🔇</div>
                             <div>
-                                <div class="font-bold text-gray-800">Ruhe bewahren</div>
-                                <div class="text-sm text-gray-600">Vermeide Lärm und das Abspielen von Vogelrufen.</div>
+                                <div class="font-bold text-sm md:text-base text-gray-800">Ruhe bewahren</div>
+                                <div class="text-xs md:text-sm text-gray-600">Vermeide Lärm und das Abspielen von Vogelrufen.</div>
                             </div>
                         </div>
                     </div>
@@ -657,23 +658,23 @@
     </section>
 
     <!-- Footer CTA -->
-    <footer class="bg-birb-teal text-white pt-20 pb-10">
+    <footer class="bg-birb-teal text-white pt-12 md:pt-20 pb-8 md:pb-10">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-4xl md:text-5xl font-bold mb-8" data-aos="fade-up">Bereit für dein erstes Birb?</h2>
-            <p class="text-teal-100 text-xl mb-10 max-w-xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+            <h2 class="text-2xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-8" data-aos="fade-up">Bereit für dein erstes Birb?</h2>
+            <p class="text-teal-100 text-base md:text-xl mb-6 md:mb-10 max-w-xl mx-auto" data-aos="fade-up" data-aos-delay="100">
                 Werde Teil der Community und entdecke die Natur vor deiner Haustür neu.
             </p>
             
-            <a href="https://birbz-new.vercel.app/" class="inline-block bg-white text-birb-teal font-bold text-xl px-10 py-4 rounded-full shadow-xl hover:shadow-2xl hover:bg-gray-100 transition transform hover:-translate-y-1" data-aos="zoom-in" data-aos-delay="200">
+            <a href="https://birbz-new.vercel.app/" class="inline-block bg-white text-birb-teal font-bold text-base md:text-xl px-6 md:px-10 py-3 md:py-4 rounded-full shadow-xl hover:shadow-2xl hover:bg-gray-100 transition transform hover:-translate-y-1" data-aos="zoom-in" data-aos-delay="200">
                 Kostenlos loslegen
             </a>
 
-            <div class="mt-20 pt-8 border-t border-teal-800 flex flex-col md:flex-row justify-between items-center text-teal-300 text-sm">
+            <div class="mt-12 md:mt-20 pt-6 md:pt-8 border-t border-teal-800 flex flex-col md:flex-row justify-between items-center text-teal-300 text-xs md:text-sm">
                 <div class="flex items-center gap-2">
-                    <img src="images/birbz-icon.png" alt="Birbz" class="w-6 h-6">
+                    <img src="images/birbz-icon.png" alt="Birbz" class="w-5 h-5 md:w-6 md:h-6">
                     <span>&copy; 2025 Birbz. Made with ❤️ for Nature.</span>
                 </div>
-                <div class="flex gap-6 mt-4 md:mt-0">
+                <div class="flex gap-4 md:gap-6 mt-3 md:mt-0">
                     <a href="datenschutz.html" class="hover:text-white transition">Datenschutz</a>
                     <a href="impressum.html" class="hover:text-white transition">Impressum</a>
                 </div>
@@ -686,11 +687,10 @@
     <script>
         AOS.init({
             once: true,
-            offset: 100,
+            offset: 50,
             duration: 800,
             easing: 'ease-out-cubic',
         });
     </script>
 </body>
 </html>
-```
