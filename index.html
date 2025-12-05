@@ -7,8 +7,8 @@
     <meta name="description" content="Vogelbeobachtung mit KI-Erkennung, Gamification und Community. Sammle legendäre Vogelkarten.">
     
     <!-- Favicon -->
-    <link rel="apple-touch-icon" href="images/birbz-icon.png">
-    <link rel="icon" type="image/png" href="images/birbz-icon.png">
+    <link rel="apple-touch-icon" href="images/birdnerd-icon.png">
+    <link rel="icon" type="image/png" href="images/birdnerd-icon.png">
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -74,6 +74,10 @@
             0%, 100% { opacity: 0.5; }
             50% { opacity: 1; }
         }
+
+        .swarm-glow {
+            box-shadow: 0 0 40px rgba(13, 148, 136, 0.2), 0 0 80px rgba(13, 148, 136, 0.1);
+        }
     </style>
 </head>
 <body class="bg-birb-bg text-slate-800 font-sans antialiased">
@@ -83,15 +87,15 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
                 <div class="flex items-center gap-2">
-                    <img src="images/birbz-icon.png" alt="BirdNerd" class="w-8 h-8 md:w-10 md:h-10 rounded-xl">
+                    <img src="images/birdnerd-icon.png" alt="BirdNerd" class="w-8 h-8 md:w-10 md:h-10 rounded-xl">
                     <span class="font-bold text-xl md:text-2xl tracking-tight text-birb-teal">BirdNerd</span>
                 </div>
                 <div class="hidden md:flex space-x-8">
                     <a href="#features" class="text-gray-600 hover:text-birb-primary transition">Features</a>
+                    <a href="#schwarm" class="text-gray-600 hover:text-birb-primary transition">Schwarm</a>
                     <a href="#cards" class="text-gray-600 hover:text-birb-primary transition">Sammelkarten</a>
-                    <a href="#community" class="text-gray-600 hover:text-birb-primary transition">Community</a>
                 </div>
-                <a href="https://birbz-new.vercel.app/" class="bg-birb-teal hover:bg-teal-900 text-white px-4 py-2 text-sm md:px-5 md:text-base rounded-full font-medium transition shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+                <a href="https://birdnerd.vercel.app/" class="bg-birb-teal hover:bg-teal-900 text-white px-4 py-2 text-sm md:px-5 md:text-base rounded-full font-medium transition shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
                     App öffnen
                 </a>
             </div>
@@ -125,7 +129,7 @@
                         Die App, die aus Spaziergängen Schatzsuchen macht. Erkenne Vögel per KI, verdiene Punkte und bau die größte Sammlung deines Schwarms auf.
                     </p>
                     
-                    <a href="https://birbz-new.vercel.app/" class="inline-flex justify-center items-center px-6 py-3 md:px-8 md:py-4 text-base md:text-lg font-bold rounded-2xl text-white bg-birb-teal hover:bg-teal-900 shadow-lg hover:shadow-birb-teal/30 transition-all transform hover:-translate-y-1">
+                    <a href="https://birdnerd.vercel.app/" class="inline-flex justify-center items-center px-6 py-3 md:px-8 md:py-4 text-base md:text-lg font-bold rounded-2xl text-white bg-birb-teal hover:bg-teal-900 shadow-lg hover:shadow-birb-teal/30 transition-all transform hover:-translate-y-1">
                         Jetzt starten
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
@@ -135,15 +139,13 @@
 
                 <!-- Hero Image / Mockup -->
                 <div class="relative flex justify-center items-center mt-8 lg:mt-0 lg:h-[600px]" data-aos="fade-up" data-aos-duration="1200">
-                    <!-- Phone Mockup with Schwanzmeise Screenshot -->
                     <div class="relative w-[200px] h-[400px] md:w-[240px] md:h-[480px] lg:w-[280px] lg:h-[560px] bg-gray-900 rounded-[2rem] md:rounded-[2.5rem] lg:rounded-[3rem] border-[5px] md:border-[6px] lg:border-8 border-gray-900 shadow-2xl overflow-hidden z-20 lg:rotate-[-5deg] lg:hover:rotate-0 transition duration-500">
                         <div class="absolute top-0 w-full h-4 md:h-5 lg:h-6 bg-gray-900 z-20 flex justify-center items-end pb-1">
                             <div class="w-14 md:w-16 lg:w-20 h-2.5 md:h-3 lg:h-4 bg-black rounded-full"></div>
                         </div>
-                        <img src="images/schwanzmeise.jpg" alt="Schwanzmeise in Birbz" class="w-full h-full object-cover object-top">
+                        <img src="images/schwanzmeise.jpg" alt="Schwanzmeise in BirdNerd" class="w-full h-full object-cover object-top">
                     </div>
 
-                    <!-- Second Phone Mockup with Vogelradar - Hidden on Mobile/Tablet -->
                     <div class="hidden lg:block absolute -bottom-8 -right-4 w-[180px] bg-gray-900 rounded-[2rem] p-1.5 shadow-2xl z-30 transform rotate-[8deg] hover:rotate-0 hover:scale-105 transition duration-300" data-aos="fade-up" data-aos-delay="400">
                         <img src="images/vogelradar.jpg" alt="Vogelradar Karte" class="rounded-[1.5rem] w-full">
                     </div>
@@ -176,18 +178,16 @@
     <section id="features" class="py-16 md:py-24 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
-                <!-- Image Side - Vogel bestimmen Screenshot -->
                 <div class="order-2 md:order-1 relative flex justify-center" data-aos="fade-up">
                     <div class="bg-gray-100 rounded-2xl md:rounded-3xl p-3 md:p-4 shadow-inner">
                         <div class="relative w-[180px] md:w-[220px] lg:w-[260px] mx-auto">
                             <div class="bg-gray-900 rounded-[1.8rem] md:rounded-[2rem] lg:rounded-[2.5rem] p-1.5 md:p-2 shadow-xl">
-                                <img src="images/vogel-id.png" alt="Vogel bestimmen in Birbz" class="rounded-[1.5rem] md:rounded-[1.7rem] lg:rounded-[2rem] w-full">
+                                <img src="images/vogel-id.png" alt="Vogel bestimmen in BirdNerd" class="rounded-[1.5rem] md:rounded-[1.7rem] lg:rounded-[2rem] w-full">
                             </div>
                         </div>
                     </div>
                 </div>
                 
-                <!-- Content Side -->
                 <div class="order-1 md:order-2" data-aos="fade-up">
                     <div class="inline-block px-3 py-1 mb-3 md:mb-4 text-xs font-semibold tracking-wider text-birb-primary uppercase bg-teal-50 rounded-full">
                         Powered by AI
@@ -217,7 +217,6 @@
                         </li>
                     </ul>
 
-                    <!-- Urlaubsmodus Badge -->
                     <div class="mt-6 md:mt-8 p-3 md:p-4 bg-gradient-to-r from-amber-50 to-orange-50 rounded-xl md:rounded-2xl border border-amber-200">
                         <div class="flex items-center gap-2 md:gap-3">
                             <span class="text-xl md:text-2xl">🌴</span>
@@ -232,15 +231,142 @@
         </div>
     </section>
 
+    <!-- NEW SECTION: Schwarm Feature -->
+    <section id="schwarm" class="py-16 md:py-24 bg-gradient-to-b from-teal-50 to-white relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-96 h-96 bg-teal-100 rounded-full blur-3xl opacity-50 -z-10"></div>
+        <div class="absolute bottom-0 left-0 w-64 h-64 bg-orange-100 rounded-full blur-3xl opacity-50 -z-10"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10 md:mb-16" data-aos="fade-up">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-teal-100 text-birb-teal text-sm font-semibold mb-4">
+                    <span class="text-xl">🪺</span>
+                    Neu: Schwarm-Modus
+                </div>
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+                    Gemeinsam alle <br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-birb-teal to-teal-500">322 Arten</span> sammeln.
+                </h2>
+                <p class="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
+                    Gründe deinen eigenen Schwarm oder tritt einem bei. Sammelt zusammen, verdient Boni und erreicht Meilensteine als Team.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-16 items-center">
+                
+                <!-- Schwarm Visual -->
+                <div class="relative" data-aos="fade-up">
+                    <div class="bg-white rounded-3xl p-6 md:p-8 shadow-xl swarm-glow">
+                        <!-- Schwarm Header -->
+                        <div class="flex items-center gap-3 mb-6">
+                            <span class="text-4xl">🪺</span>
+                            <div>
+                                <div class="font-bold text-xl text-gray-800">Vogelfreunde Berlin</div>
+                                <div class="text-sm text-gray-500">7 von 10 Mitgliedern</div>
+                            </div>
+                        </div>
+
+                        <!-- Stats -->
+                        <div class="grid grid-cols-3 gap-3 mb-6">
+                            <div class="bg-teal-50 rounded-xl p-3 text-center">
+                                <div class="text-2xl font-bold text-birb-teal">156</div>
+                                <div class="text-xs text-gray-500">Arten</div>
+                            </div>
+                            <div class="bg-orange-50 rounded-xl p-3 text-center">
+                                <div class="text-2xl font-bold text-birb-orange flex items-center justify-center gap-1">
+                                    23 <span class="text-lg">🔥</span>
+                                </div>
+                                <div class="text-xs text-gray-500">Streak</div>
+                            </div>
+                            <div class="bg-purple-50 rounded-xl p-3 text-center">
+                                <div class="text-2xl font-bold text-purple-600">4</div>
+                                <div class="text-xs text-gray-500">Badges</div>
+                            </div>
+                        </div>
+
+                        <!-- Progress -->
+                        <div class="mb-6">
+                            <div class="flex justify-between text-sm mb-2">
+                                <span class="text-gray-600">Nächstes Badge: Meisterschwarm</span>
+                                <span class="font-bold text-birb-teal">156/200</span>
+                            </div>
+                            <div class="h-3 bg-gray-100 rounded-full overflow-hidden">
+                                <div class="h-full bg-gradient-to-r from-birb-teal to-teal-400 rounded-full" style="width: 78%"></div>
+                            </div>
+                        </div>
+
+                        <!-- Members Preview -->
+                        <div class="flex items-center justify-between">
+                            <div class="flex -space-x-2">
+                                <div class="w-10 h-10 rounded-full bg-gradient-to-br from-teal-300 to-teal-500 border-2 border-white"></div>
+                                <div class="w-10 h-10 rounded-full bg-gradient-to-br from-orange-300 to-orange-500 border-2 border-white"></div>
+                                <div class="w-10 h-10 rounded-full bg-gradient-to-br from-purple-300 to-purple-500 border-2 border-white"></div>
+                                <div class="w-10 h-10 rounded-full bg-gradient-to-br from-pink-300 to-pink-500 border-2 border-white"></div>
+                                <div class="w-10 h-10 rounded-full bg-gray-200 border-2 border-white flex items-center justify-center text-xs font-bold text-gray-500">+3</div>
+                            </div>
+                            <div class="bg-teal-100 text-birb-teal px-3 py-1.5 rounded-full text-sm font-bold">
+                                Code: BRD247
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Features List -->
+                <div data-aos="fade-up" data-aos-delay="100">
+                    <div class="space-y-4 md:space-y-6">
+                        <div class="flex gap-4 p-4 bg-white rounded-2xl shadow-sm hover:shadow-md transition">
+                            <div class="w-12 h-12 bg-teal-100 rounded-xl flex items-center justify-center text-2xl flex-shrink-0">👥</div>
+                            <div>
+                                <div class="font-bold text-gray-800 mb-1">Bis zu 10 Mitglieder</div>
+                                <div class="text-sm text-gray-600">Lade Freunde und Familie per Einladungscode ein. Perfekt für Vogelwanderungen!</div>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-4 p-4 bg-white rounded-2xl shadow-sm hover:shadow-md transition">
+                            <div class="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center text-2xl flex-shrink-0">🔥</div>
+                            <div>
+                                <div class="font-bold text-gray-800 mb-1">Schwarm-Streaks</div>
+                                <div class="text-sm text-gray-600">Loggt jeden Tag gemeinsam und verdient Bonus-XP bei 7, 30 und 100 Tagen!</div>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-4 p-4 bg-white rounded-2xl shadow-sm hover:shadow-md transition">
+                            <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center text-2xl flex-shrink-0">🏆</div>
+                            <div>
+                                <div class="font-bold text-gray-800 mb-1">Meilenstein-Badges</div>
+                                <div class="text-sm text-gray-600">Schaltet gemeinsam Badges frei bei 50, 100, 200 und allen 322 Arten!</div>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-4 p-4 bg-white rounded-2xl shadow-sm hover:shadow-md transition">
+                            <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center text-2xl flex-shrink-0">⚡</div>
+                            <div>
+                                <div class="font-bold text-gray-800 mb-1">XP für alle</div>
+                                <div class="text-sm text-gray-600">Jedes freigeschaltete Badge gibt Bonus-XP an <strong>alle</strong> Schwarm-Mitglieder!</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 p-4 bg-gradient-to-r from-birb-teal to-teal-600 rounded-2xl text-white">
+                        <div class="flex items-center gap-3">
+                            <span class="text-3xl">🎯</span>
+                            <div>
+                                <div class="font-bold">Das ultimative Ziel</div>
+                                <div class="text-sm text-teal-100">Sammelt als Schwarm alle 322 Vogelarten Deutschlands und verdient das legendäre "Komplettsammler"-Badge!</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Section: Legendary Cards -->
     <section id="cards" class="py-16 md:py-24 bg-gradient-to-b from-gray-900 to-gray-800 text-white relative overflow-hidden">
-        <!-- Background glow -->
         <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] md:w-[600px] h-[300px] md:h-[600px] bg-birb-orange/20 rounded-full blur-3xl"></div>
         
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-16 items-center">
                 
-                <!-- Content Side -->
                 <div data-aos="fade-up">
                     <div class="inline-block px-3 py-1 mb-3 md:mb-4 text-xs font-semibold tracking-wider text-yellow-400 uppercase bg-yellow-400/10 rounded-full border border-yellow-400/30">
                         ✨ Sammelkarten
@@ -277,19 +403,15 @@
                     </div>
                 </div>
 
-                <!-- Card Display -->
                 <div class="relative flex justify-center items-center" data-aos="fade-up">
                     <div class="relative">
-                        <!-- Glow effect behind card -->
                         <div class="absolute inset-0 bg-gradient-to-r from-yellow-400 to-orange-500 blur-2xl opacity-30 scale-110"></div>
                         
-                        <!-- Legendary Card -->
                         <div class="relative w-[220px] md:w-[300px] lg:w-[350px] transform hover:scale-105 transition duration-500 hover:rotate-1">
                             <img src="images/raubwuerger-legendary.png" alt="Legendäre Raubwürger Karte" class="rounded-xl md:rounded-2xl shadow-2xl w-full card-glow">
                             <div class="absolute inset-0 rounded-xl md:rounded-2xl legendary-shimmer pointer-events-none"></div>
                         </div>
 
-                        <!-- Small info badge -->
                         <div class="absolute -bottom-5 md:-bottom-6 left-1/2 -translate-x-1/2 bg-white text-gray-800 px-3 md:px-4 py-1.5 md:py-2 rounded-full shadow-lg text-xs md:text-sm font-medium whitespace-nowrap">
                             Raubwürger · <span class="text-yellow-600">Legendär</span> · +500 XP
                         </div>
@@ -308,21 +430,18 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8">
-                <!-- Card 1: XP -->
                 <div class="bg-white rounded-2xl md:rounded-3xl p-6 md:p-8 shadow-sm hover:shadow-md transition-shadow" data-aos="fade-up" data-aos-delay="100">
                     <div class="w-12 h-12 md:w-14 md:h-14 bg-yellow-100 rounded-xl md:rounded-2xl flex items-center justify-center text-2xl md:text-3xl mb-4 md:mb-6">⚡</div>
                     <h3 class="text-lg md:text-xl font-bold text-gray-900 mb-2 md:mb-3">XP & Level</h3>
                     <p class="text-sm md:text-base text-gray-600">Jede Sichtung bringt Punkte. Seltene Vögel katapultieren dich schneller ins nächste Level.</p>
                 </div>
 
-                <!-- Card 2: Achievements -->
                 <div class="bg-white rounded-2xl md:rounded-3xl p-6 md:p-8 shadow-sm hover:shadow-md transition-shadow" data-aos="fade-up" data-aos-delay="200">
                     <div class="w-12 h-12 md:w-14 md:h-14 bg-birb-teal/10 rounded-xl md:rounded-2xl flex items-center justify-center text-2xl md:text-3xl mb-4 md:mb-6">🏅</div>
                     <h3 class="text-lg md:text-xl font-bold text-gray-900 mb-2 md:mb-3">150+ Badges</h3>
                     <p class="text-sm md:text-base text-gray-600">Werde zum "Eulen-Flüsterer" oder "Park-Ranger". Spezielle Herausforderungen warten auf dich.</p>
                 </div>
 
-                <!-- Card 3: Streaks -->
                 <div class="bg-white rounded-2xl md:rounded-3xl p-6 md:p-8 shadow-sm hover:shadow-md transition-shadow" data-aos="fade-up" data-aos-delay="300">
                     <div class="w-12 h-12 md:w-14 md:h-14 bg-orange-100 rounded-xl md:rounded-2xl flex items-center justify-center text-2xl md:text-3xl mb-4 md:mb-6">🔥</div>
                     <h3 class="text-lg md:text-xl font-bold text-gray-900 mb-2 md:mb-3">Daily Streaks</h3>
@@ -337,16 +456,14 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
                 
-                <!-- Phone Mockup -->
                 <div class="relative flex justify-center" data-aos="fade-up">
                     <div class="relative w-[200px] md:w-[240px] lg:w-[280px]">
                         <div class="bg-gray-900 rounded-[2rem] md:rounded-[2.5rem] p-1.5 md:p-2 shadow-2xl">
-                            <img src="images/sammlung.png" alt="Vogelsammlung in Birbz" class="rounded-[1.7rem] md:rounded-[2rem] w-full">
+                            <img src="images/sammlung.png" alt="Vogelsammlung in BirdNerd" class="rounded-[1.7rem] md:rounded-[2rem] w-full">
                         </div>
                     </div>
                 </div>
 
-                <!-- Content Side -->
                 <div data-aos="fade-up">
                     <div class="inline-block px-3 py-1 mb-3 md:mb-4 text-xs font-semibold tracking-wider text-birb-primary uppercase bg-teal-50 rounded-full">
                         Deine Sammlung
@@ -385,7 +502,6 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
                 
-                <!-- Phone Mockup -->
                 <div class="relative flex justify-center order-2 md:order-1" data-aos="fade-up">
                     <div class="relative w-[200px] md:w-[240px] lg:w-[280px]">
                         <div class="bg-gray-900 rounded-[2rem] md:rounded-[2.5rem] p-1.5 md:p-2 shadow-2xl">
@@ -394,7 +510,6 @@
                     </div>
                 </div>
 
-                <!-- Content Side -->
                 <div class="order-1 md:order-2" data-aos="fade-up">
                     <div class="inline-block px-3 py-1 mb-3 md:mb-4 text-xs font-semibold tracking-wider text-birb-primary uppercase bg-teal-50 rounded-full">
                         📍 Vogelradar
@@ -428,82 +543,8 @@
         </div>
     </section>
 
-    <!-- Section: Community / Circles -->
-    <section id="community" class="py-16 md:py-24 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
-                
-                <!-- Content Side -->
-                <div data-aos="fade-up">
-                    <div class="inline-block px-3 py-1 mb-3 md:mb-4 text-xs font-semibold tracking-wider text-birb-orange uppercase bg-orange-50 rounded-full">
-                        Circles
-                    </div>
-                    <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4 md:mb-6">Dein Schwarm, <br>deine Regeln.</h2>
-                    <p class="text-base md:text-lg text-gray-600 mb-4 md:mb-6">
-                        Gründe deinen eigenen Circle oder tritt bestehenden bei. Vergleiche deine Sichtungen mit Freunden und klettere gemeinsam die Leaderboards hoch.
-                    </p>
-                    <ul class="space-y-3 md:space-y-4">
-                        <li class="flex items-start">
-                            <div class="flex-shrink-0 w-5 h-5 md:w-6 md:h-6 rounded-full bg-orange-100 flex items-center justify-center mt-0.5 md:mt-1">
-                                <span class="text-birb-orange text-xs md:text-sm">👥</span>
-                            </div>
-                            <span class="ml-2 md:ml-3 text-sm md:text-base text-gray-600">Private oder öffentliche Gruppen</span>
-                        </li>
-                        <li class="flex items-start">
-                            <div class="flex-shrink-0 w-5 h-5 md:w-6 md:h-6 rounded-full bg-orange-100 flex items-center justify-center mt-0.5 md:mt-1">
-                                <span class="text-birb-orange text-xs md:text-sm">📊</span>
-                            </div>
-                            <span class="ml-2 md:ml-3 text-sm md:text-base text-gray-600">Regionale Leaderboards</span>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- Visual Side -->
-                <div class="relative" data-aos="fade-up">
-                    <div class="bg-birb-bg rounded-2xl md:rounded-3xl p-4 md:p-6 shadow-inner">
-                        <div class="bg-white rounded-xl md:rounded-2xl shadow-lg p-4 md:p-6">
-                            <div class="flex items-center justify-between mb-4 md:mb-6">
-                                <h4 class="font-bold text-base md:text-lg text-gray-800">🏆 Leaderboard</h4>
-                                <span class="text-xs md:text-sm text-gray-500">Diese Woche</span>
-                            </div>
-                            <div class="space-y-3 md:space-y-4">
-                                <div class="flex items-center gap-2 md:gap-4 p-2 md:p-3 bg-yellow-50 rounded-lg md:rounded-xl border-2 border-yellow-200">
-                                    <span class="text-lg md:text-2xl">🥇</span>
-                                    <div class="w-8 h-8 md:w-10 md:h-10 rounded-full bg-gradient-to-br from-yellow-300 to-orange-400"></div>
-                                    <div class="flex-1 min-w-0">
-                                        <div class="font-semibold text-sm md:text-base text-gray-800 truncate">VogelProfi_92</div>
-                                        <div class="text-xs md:text-sm text-gray-500">47 Arten</div>
-                                    </div>
-                                    <div class="text-birb-teal font-bold text-sm md:text-base">2.340 XP</div>
-                                </div>
-                                <div class="flex items-center gap-2 md:gap-4 p-2 md:p-3 bg-gray-50 rounded-lg md:rounded-xl">
-                                    <span class="text-lg md:text-2xl">🥈</span>
-                                    <div class="w-8 h-8 md:w-10 md:h-10 rounded-full bg-gradient-to-br from-gray-300 to-gray-400"></div>
-                                    <div class="flex-1 min-w-0">
-                                        <div class="font-semibold text-sm md:text-base text-gray-800 truncate">NaturLiebe</div>
-                                        <div class="text-xs md:text-sm text-gray-500">38 Arten</div>
-                                    </div>
-                                    <div class="text-birb-teal font-bold text-sm md:text-base">1.890 XP</div>
-                                </div>
-                                <div class="flex items-center gap-2 md:gap-4 p-2 md:p-3 bg-orange-50 rounded-lg md:rounded-xl">
-                                    <span class="text-lg md:text-2xl">🥉</span>
-                                    <div class="w-8 h-8 md:w-10 md:h-10 rounded-full bg-gradient-to-br from-orange-300 to-orange-500"></div>
-                                    <div class="flex-1 min-w-0">
-                                        <div class="font-semibold text-sm md:text-base text-gray-800 truncate">BirbWatcher</div>
-                                        <div class="text-xs md:text-sm text-gray-500">31 Arten</div>
-                                    </div>
-                                    <div class="text-birb-teal font-bold text-sm md:text-base">1.540 XP</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Section: How it works -->
-    <section class="py-16 md:py-24 bg-birb-bg">
+    <section class="py-16 md:py-24 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-10 md:mb-16">
                 <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900">So startest du durch</h2>
@@ -512,23 +553,20 @@
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 relative">
                 <div class="hidden md:block absolute top-12 left-0 w-full h-0.5 bg-gray-200 -z-10"></div>
 
-                <!-- Step 1 -->
                 <div class="text-center" data-aos="fade-up" data-aos-delay="0">
-                    <div class="w-16 h-16 md:w-24 md:h-24 mx-auto bg-birb-teal text-white rounded-full flex items-center justify-center text-2xl md:text-3xl font-bold shadow-lg mb-4 md:mb-6 border-4 md:border-8 border-birb-bg relative z-10">1</div>
+                    <div class="w-16 h-16 md:w-24 md:h-24 mx-auto bg-birb-teal text-white rounded-full flex items-center justify-center text-2xl md:text-3xl font-bold shadow-lg mb-4 md:mb-6 border-4 md:border-8 border-white relative z-10">1</div>
                     <h3 class="text-lg md:text-xl font-bold mb-2">Öffnen</h3>
-                    <p class="text-sm md:text-base text-gray-500">Kein Download nötig. Birbz läuft direkt als Web-App in deinem Browser.</p>
+                    <p class="text-sm md:text-base text-gray-500">Kein Download nötig. BirdNerd läuft direkt als Web-App in deinem Browser.</p>
                 </div>
 
-                <!-- Step 2 -->
                 <div class="text-center" data-aos="fade-up" data-aos-delay="200">
                     <div class="w-16 h-16 md:w-24 md:h-24 mx-auto bg-white text-birb-teal border-2 border-birb-teal rounded-full flex items-center justify-center text-2xl md:text-3xl font-bold shadow-lg mb-4 md:mb-6 relative z-10">2</div>
                     <h3 class="text-lg md:text-xl font-bold mb-2">Scannen</h3>
                     <p class="text-sm md:text-base text-gray-500">Mach ein Foto von einem Vogel. Die KI identifiziert die Art in Sekunden.</p>
                 </div>
 
-                <!-- Step 3 -->
                 <div class="text-center" data-aos="fade-up" data-aos-delay="400">
-                    <div class="w-16 h-16 md:w-24 md:h-24 mx-auto bg-birb-orange text-white rounded-full flex items-center justify-center text-2xl md:text-3xl font-bold shadow-lg mb-4 md:mb-6 border-4 md:border-8 border-birb-bg relative z-10">3</div>
+                    <div class="w-16 h-16 md:w-24 md:h-24 mx-auto bg-birb-orange text-white rounded-full flex items-center justify-center text-2xl md:text-3xl font-bold shadow-lg mb-4 md:mb-6 border-4 md:border-8 border-white relative z-10">3</div>
                     <h3 class="text-lg md:text-xl font-bold mb-2">Sammeln</h3>
                     <p class="text-sm md:text-base text-gray-500">Fülle deine Vogel-Sammlung, schalte Badges frei und steige im Leaderboard auf.</p>
                 </div>
@@ -537,7 +575,7 @@
     </section>
 
     <!-- Section: Install PWA -->
-    <section class="py-12 md:py-16 bg-white">
+    <section class="py-12 md:py-16 bg-birb-bg">
         <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="bg-gradient-to-br from-birb-teal to-teal-700 rounded-2xl md:rounded-3xl p-6 md:p-12 text-white text-center" data-aos="fade-up">
                 <div class="inline-block px-3 py-1 mb-3 md:mb-4 text-xs font-semibold tracking-wider uppercase bg-white/20 rounded-full">
@@ -549,7 +587,6 @@
                 </p>
                 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 text-left max-w-2xl mx-auto">
-                    <!-- iOS -->
                     <div class="bg-white/10 backdrop-blur rounded-xl md:rounded-2xl p-4 md:p-6">
                         <div class="flex items-center gap-2 md:gap-3 mb-3 md:mb-4">
                             <div class="w-8 h-8 md:w-10 md:h-10 bg-white/20 rounded-lg md:rounded-xl flex items-center justify-center text-lg md:text-xl">🍎</div>
@@ -571,7 +608,6 @@
                         </ol>
                     </div>
                     
-                    <!-- Android -->
                     <div class="bg-white/10 backdrop-blur rounded-xl md:rounded-2xl p-4 md:p-6">
                         <div class="flex items-center gap-2 md:gap-3 mb-3 md:mb-4">
                             <div class="w-8 h-8 md:w-10 md:h-10 bg-white/20 rounded-lg md:rounded-xl flex items-center justify-center text-lg md:text-xl">🤖</div>
@@ -598,11 +634,10 @@
     </section>
 
     <!-- Section: Ethical Birding -->
-    <section class="py-16 md:py-24 bg-birb-bg">
+    <section class="py-16 md:py-24 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
                 
-                <!-- Content Side -->
                 <div data-aos="fade-up">
                     <div class="inline-block px-3 py-1 mb-3 md:mb-4 text-xs font-semibold tracking-wider text-green-600 uppercase bg-green-50 rounded-full">
                         💚 Ehrenkodex
@@ -613,38 +648,30 @@
                     </p>
                 </div>
 
-                <!-- Rules Side -->
                 <div data-aos="fade-up">
                     <div class="space-y-3 md:space-y-4">
-                        <div class="flex items-start gap-3 md:gap-4 p-3 md:p-4 bg-white rounded-xl md:rounded-2xl shadow-sm">
+                        <div class="flex items-start gap-3 md:gap-4 p-3 md:p-4 bg-birb-bg rounded-xl md:rounded-2xl">
                             <div class="w-10 h-10 md:w-12 md:h-12 bg-green-100 rounded-lg md:rounded-xl flex items-center justify-center text-lg md:text-xl flex-shrink-0">👁️</div>
                             <div>
                                 <div class="font-bold text-sm md:text-base text-gray-800">Abstand halten</div>
                                 <div class="text-xs md:text-sm text-gray-600">Beobachte aus der Distanz. Nähere dich nicht zu weit an.</div>
                             </div>
                         </div>
-                        <div class="flex items-start gap-3 md:gap-4 p-3 md:p-4 bg-white rounded-xl md:rounded-2xl shadow-sm">
+                        <div class="flex items-start gap-3 md:gap-4 p-3 md:p-4 bg-birb-bg rounded-xl md:rounded-2xl">
                             <div class="w-10 h-10 md:w-12 md:h-12 bg-yellow-100 rounded-lg md:rounded-xl flex items-center justify-center text-lg md:text-xl flex-shrink-0">⚠️</div>
                             <div>
                                 <div class="font-bold text-sm md:text-base text-gray-800">Nistende Vögel nicht stören</div>
                                 <div class="text-xs md:text-sm text-gray-600">Halte dich von Nestern fern, besonders während der Brutzeit.</div>
                             </div>
                         </div>
-                        <div class="flex items-start gap-3 md:gap-4 p-3 md:p-4 bg-white rounded-xl md:rounded-2xl shadow-sm">
+                        <div class="flex items-start gap-3 md:gap-4 p-3 md:p-4 bg-birb-bg rounded-xl md:rounded-2xl">
                             <div class="w-10 h-10 md:w-12 md:h-12 bg-amber-100 rounded-lg md:rounded-xl flex items-center justify-center text-lg md:text-xl flex-shrink-0">🌿</div>
                             <div>
                                 <div class="font-bold text-sm md:text-base text-gray-800">Auf Wegen bleiben</div>
                                 <div class="text-xs md:text-sm text-gray-600">Bodenbrüter wie Feldlerchen und Kiebitze brüten am Boden.</div>
                             </div>
                         </div>
-                        <div class="flex items-start gap-3 md:gap-4 p-3 md:p-4 bg-white rounded-xl md:rounded-2xl shadow-sm">
-                            <div class="w-10 h-10 md:w-12 md:h-12 bg-green-100 rounded-lg md:rounded-xl flex items-center justify-center text-lg md:text-xl flex-shrink-0">🌲</div>
-                            <div>
-                                <div class="font-bold text-sm md:text-base text-gray-800">Naturschutzgebiete respektieren</div>
-                                <div class="text-xs md:text-sm text-gray-600">Beachte Betretungsverbote und halte dich an ausgewiesene Wege.</div>
-                            </div>
-                        </div>
-                        <div class="flex items-start gap-3 md:gap-4 p-3 md:p-4 bg-white rounded-xl md:rounded-2xl shadow-sm">
+                        <div class="flex items-start gap-3 md:gap-4 p-3 md:p-4 bg-birb-bg rounded-xl md:rounded-2xl">
                             <div class="w-10 h-10 md:w-12 md:h-12 bg-purple-100 rounded-lg md:rounded-xl flex items-center justify-center text-lg md:text-xl flex-shrink-0">🔇</div>
                             <div>
                                 <div class="font-bold text-sm md:text-base text-gray-800">Ruhe bewahren</div>
@@ -665,13 +692,13 @@
                 Werde Teil der Community und entdecke die Natur vor deiner Haustür neu.
             </p>
             
-            <a href="https://birbz-new.vercel.app/" class="inline-block bg-white text-birb-teal font-bold text-base md:text-xl px-6 md:px-10 py-3 md:py-4 rounded-full shadow-xl hover:shadow-2xl hover:bg-gray-100 transition transform hover:-translate-y-1" data-aos="zoom-in" data-aos-delay="200">
+            <a href="https://birdnerd.vercel.app/" class="inline-block bg-white text-birb-teal font-bold text-base md:text-xl px-6 md:px-10 py-3 md:py-4 rounded-full shadow-xl hover:shadow-2xl hover:bg-gray-100 transition transform hover:-translate-y-1" data-aos="zoom-in" data-aos-delay="200">
                 Kostenlos loslegen
             </a>
 
             <div class="mt-12 md:mt-20 pt-6 md:pt-8 border-t border-teal-800 flex flex-col md:flex-row justify-between items-center text-teal-300 text-xs md:text-sm">
                 <div class="flex items-center gap-2">
-                    <img src="images/birbz-icon.png" alt="Birbz" class="w-5 h-5 md:w-6 md:h-6">
+                    <img src="images/birdnerd-icon.png" alt="BirdNerd" class="w-5 h-5 md:w-6 md:h-6">
                     <span>&copy; 2025 BirdNerd. Made with ❤️ for Nature.</span>
                 </div>
                 <div class="flex gap-4 md:gap-6 mt-3 md:mt-0">
