@@ -361,31 +361,91 @@
         </div>
     </section>
 
-    <!-- PWA Install (kompakt) -->
-    <section class="py-12 md:py-16 bg-birb-bg">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="bg-gradient-to-br from-birb-teal to-teal-700 rounded-2xl md:rounded-3xl p-6 md:p-10 text-white" data-aos="fade-up">
-                <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
-                    <div>
-                        <h2 class="text-xl md:text-2xl font-bold mb-2">📲 BirdNerd installieren</h2>
-                        <p class="text-teal-100 text-sm md:text-base">
-                            Kein App Store nötig. Als PWA direkt auf deinem Homescreen – mit Offline-Support.
-                        </p>
+  <!-- App installieren -->
+<section class="py-12 md:py-16 bg-birb-bg">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-gradient-to-br from-birb-teal to-teal-700 rounded-2xl md:rounded-3xl p-6 md:p-10 text-white" data-aos="fade-up">
+            
+            <div class="text-center mb-8">
+                <h2 class="text-xl md:text-2xl font-bold mb-2">📲 BirdNerd auf dem Homescreen</h2>
+                <p class="text-teal-100 text-sm md:text-base max-w-lg mx-auto">
+                    Kein App Store, kein Download. Füge BirdNerd direkt zu deinem Homescreen hinzu – 
+                    die App startet dann wie jede andere und funktioniert auch offline.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-4">
+                
+                <!-- iPhone/iPad -->
+                <div class="bg-white/10 backdrop-blur rounded-xl p-5">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="text-2xl">🍎</span>
+                        <div>
+                            <div class="font-bold">iPhone & iPad</div>
+                            <div class="text-xs text-red-300 font-medium">⚠️ Nur in Safari möglich!</div>
+                        </div>
                     </div>
-                    <div class="flex gap-3 flex-shrink-0">
-                        <div class="bg-white/10 backdrop-blur rounded-xl px-4 py-3 text-center">
-                            <div class="text-lg mb-1">🍎</div>
-                            <div class="text-xs text-teal-100">Safari → Teilen → Zum Home</div>
+                    
+                    <ol class="space-y-3 text-sm">
+                        <li class="flex items-start gap-3">
+                            <span class="bg-white/20 rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold flex-shrink-0">1</span>
+                            <span>Öffne <strong>birdnerd.app</strong> in Safari</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="bg-white/20 rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold flex-shrink-0">2</span>
+                            <span>Tippe auf <span class="inline-flex items-center bg-white/20 rounded px-1.5 py-0.5 mx-1">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L12 15M12 2L8 6M12 2L16 6M4 12V20H20V12"/></svg>
+                            </span> <strong>Teilen</strong> (unten)</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="bg-white/20 rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold flex-shrink-0">3</span>
+                            <span>Scrolle und wähle <strong>„Zum Home-Bildschirm"</strong></span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="bg-white/20 rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold flex-shrink-0">4</span>
+                            <span>Tippe <strong>„Hinzufügen"</strong></span>
+                        </li>
+                    </ol>
+                    
+                    <div class="mt-4 pt-4 border-t border-white/20 text-xs text-teal-200">
+                        💡 Du nutzt Chrome oder Firefox? Öffne diese Seite erst in Safari.
+                    </div>
+                </div>
+
+                <!-- Android -->
+                <div class="bg-white/10 backdrop-blur rounded-xl p-5">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="text-2xl">🤖</span>
+                        <div>
+                            <div class="font-bold">Android</div>
+                            <div class="text-xs text-teal-200">Chrome, Samsung Internet, Edge, Firefox</div>
                         </div>
-                        <div class="bg-white/10 backdrop-blur rounded-xl px-4 py-3 text-center">
-                            <div class="text-lg mb-1">🤖</div>
-                            <div class="text-xs text-teal-100">Chrome → Menü → Installieren</div>
-                        </div>
+                    </div>
+                    
+                    <ol class="space-y-3 text-sm">
+                        <li class="flex items-start gap-3">
+                            <span class="bg-white/20 rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold flex-shrink-0">1</span>
+                            <span>Öffne <strong>birdnerd.app</strong> im Browser</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="bg-white/20 rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold flex-shrink-0">2</span>
+                            <span>Tippe auf <span class="inline-flex items-center bg-white/20 rounded px-1.5 py-0.5 mx-1 font-mono">⋮</span> <strong>Menü</strong> (oben rechts)</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="bg-white/20 rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold flex-shrink-0">3</span>
+                            <span>Wähle <strong>„App installieren"</strong> oder <strong>„Zum Startbildschirm hinzufügen"</strong></span>
+                        </li>
+                    </ol>
+                    
+                    <div class="mt-4 pt-4 border-t border-white/20 text-xs text-teal-200">
+                        💡 Bei Samsung Internet findest du die Option auch unter „Seite hinzufügen zu..."
                     </div>
                 </div>
             </div>
+
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Footer -->
     <footer class="bg-birb-teal text-white pt-12 md:pt-16 pb-8">
